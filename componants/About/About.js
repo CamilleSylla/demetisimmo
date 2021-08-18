@@ -6,6 +6,7 @@ export default function About () {
         <section className={style.wrapper}>
             <div className={style.img_wrapper}>
                 <div className={style.background}/>
+                <div className={style.background} style={{background : "transparent", border: "2px solid #1c3661", left: "5vw", top: "45%", borderBottomLeftRadius: "80px", }}/>
                 <img src='/img/banner2.jpg'/>
             </div>
             <article className={style.content}>

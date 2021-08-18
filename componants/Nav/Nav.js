@@ -28,7 +28,7 @@ export default function Nav () {
                 {Menu.map((el, i) => {
 
                     return (
-                        <li> {el.name} </li>
+                        <li key={i}> {el.name} </li>
                     )
                 })}
             </ul>

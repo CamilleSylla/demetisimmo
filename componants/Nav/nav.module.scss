@@ -16,6 +16,13 @@
         left: 50%;
         transform: translate3d(-50%, 0, 0);
         font-weight: 900;
+        li {
+            transition: all ease .5s;
+            cursor: pointer;
+            &:hover {
+                color: #A67D03;
+            }
+        }
     }
     button {
         position: absolute;
