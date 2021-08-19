@@ -35,12 +35,10 @@ export default function Nav () {
               start: "top top",
               end: "top+=5% top",
               scrub: .3,
-              markers: "true"
             },
           })
           .to(NavRef.current, {
               background: "#F2F2F2",
-              borderBottom: "1px solid #1c3661",
               boxShadow: "0px 0px 40px 4px #1c3661"
               
           }, "nav")
