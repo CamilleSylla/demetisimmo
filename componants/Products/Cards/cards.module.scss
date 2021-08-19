@@ -44,11 +44,20 @@
                 height: 50%;
             }
             p {
-                font-size: .8rem;
+                font-size: .7rem;
                 padding-left: 1vh;
                 color: #1c3661;
                 font-weight: 600;
             }
         } 
+    }
+    .disponibility {
+        padding: 0 2vh 0 2vh;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background: rgba(white, .8);
+        border-radius: 10px;
+
     }
 }

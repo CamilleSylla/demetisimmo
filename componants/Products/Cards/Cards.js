@@ -1,8 +1,19 @@
 import style from './cards.module.scss'
 
 export default function Cards ({data}) {
+
+    const Disponibilite = () => {
+
+        return (
+            <div className={style.disponibility}>
+                <p>Disponible</p>
+            </div>
+        )
+    }
+
     return (
         <article className={style.wrapper}>
+
             <img className={style.main_img} src={data.main_img}/>
             <span className={style.price}>{data.prix}€</span>
             <h1>{data.title}.</h1>
@@ -13,13 +24,14 @@ export default function Cards ({data}) {
                 </div>
                 <div className={style.icon_wrapper}>
                     <img src="/icon/blue/piece.svg"/>
-                    <p>{data.piece} pièces</p>
+                    <p>{data.piece} pcs</p>
 
                 </div>
                 <div className={style.icon_wrapper}>
                     <img src="/icon/blue/bed.svg"/>
-                    <p>{data.chambres} chambre{data.chambres > 1 ? "s" : null}</p>
+                    <p>{data.chambres} chr{data.chambres > 1 ? "s" : null}</p>
                 </div>
+                <Disponibilite/>
             </div>
         </article>
     )

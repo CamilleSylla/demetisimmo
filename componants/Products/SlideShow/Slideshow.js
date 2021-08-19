@@ -13,6 +13,7 @@ export default function Slideshow ({houses}) {
                     })}
                 </div>
             </div>
+                <button>consulter tous nos biens</button>
         </section>
     )
 }
