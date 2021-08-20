@@ -1,5 +1,6 @@
 [
     {
+        "ref": "apt-123",
         "title": "Maison citadine au coeur du Mans",
         "main_img": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
         "piece": 5,
@@ -15,9 +16,11 @@
         "sejour": 40,
         "cuisine-equipe": false,
         "Ville": "Le Mans",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Nullam sit amet nisi vestibulum, efficitur urna in, volutpat libero.",
         "disponible": true
     },
     {   
+        "ref": "apt-1234",
         "title": "Maison sympatique a proximité du Mans",
         "main_img": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80", 
         "piece": 14,
@@ -33,9 +36,11 @@
         "sejour": 24,
         "cuisine-equipe": true,
         "Ville": "Changé",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Nullam sit amet nisi vestibulum, efficitur urna in, volutpat libero.",
         "disponible": true
     },
     {   
+        "ref": "apt-12345",
         "title": "Maison sympatique a proximité du Mans",
         "main_img": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", 
         "piece": 5,
@@ -51,6 +56,7 @@
         "sejour": 18,
         "cuisine-equipe": true,
         "Ville": "Ruaudin",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Nullam sit amet nisi vestibulum, efficitur urna in, volutpat libero.",
         "disponible": true
     }
 ]
