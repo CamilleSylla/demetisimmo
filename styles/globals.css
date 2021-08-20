@@ -49,7 +49,9 @@ button {
   font-size: .8rem;
   cursor: pointer;
 }
-
+textarea {
+  font-family: 'Nunito', sans-serif;
+}
 a {
   color: inherit;
   text-decoration: none;
