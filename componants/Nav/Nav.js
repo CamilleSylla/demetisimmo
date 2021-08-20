@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import style from './nav.module.scss'
 import gsap from 'gsap'
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Link from 'next/link'
 
 export default function Nav () {
 
@@ -10,19 +11,19 @@ export default function Nav () {
     const Menu = [
         {
             name: "Accueil",
-            url: ""
+            url: "/"
         },
         {
             name: "Services",
-            url: ""
+            url: "/"
         },
         {
             name: "Propriétés",
-            url: ""
+            url: "/proprietes"
         },
         {
             name: "Notre Équipe",
-            url: ""
+            url: "/"
         },
     ]
 
@@ -37,10 +38,8 @@ export default function Nav () {
               scrub: .3,
             },
           })
-          .to(NavRef.current, {
-              background: "#F2F2F2",
-              boxShadow: "0px 0px 40px 4px #1c3661"
-              
+          .from(NavRef.current, {
+              opacity: 0
           }, "nav")
           .to(Logo.current, {
               height: "80%",
@@ -50,13 +49,17 @@ export default function Nav () {
     }, [])
 
     return (
-        <nav ref={NavRef} className={style.wrapper}>
+        <nav  className={style.wrapper}>
+            <div ref={NavRef} className={style.background}/>
             <img ref={Logo} src="/Logo/Logo.jpg" />
             <ul>
                 {Menu.map((el, i) => {
 
                     return (
-                        <li key={i}> {el.name} </li>
+                        <Link href={`/${el.url}`}>
+                            <li key={i}> {el.name} </li>
+
+                        </Link>
                     )
                 })}
             </ul>
