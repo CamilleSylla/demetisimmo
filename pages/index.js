@@ -8,12 +8,14 @@ import house from '../Json/House.json'
 import avis from '../Json/Avis.json'
 import team from '../Json/Team.json'
 import Team from '../componants/Team/Home/Team'
+import WhyUs from '../componants/WhyUS/WhyUs'
 export default function Home() {
   return (
     <div>
       <Banner/>
       <About/>
       <Slideshow houses={house}/>
+      <WhyUs/>
       <Avis avis={avis}/>
       <Team limit={3} team={team}/>
     </div>
