@@ -1,0 +1,59 @@
+.wrapper {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .adresse {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 1vw;
+            height: 1rem;
+        }
+        
+    }
+    .informations {
+        padding-top: 1vh;
+        .icon_wrapper {
+            margin-top: 2vh;
+            padding: 0 1vh 0 1vh;
+            height: 5vh;
+            background: rgba(#1c3661, .1);
+            display: inline-flex;
+            align-items: center;
+            border-radius: 10px;
+            margin-right: 2vh;
+            img {
+                height: 50%;
+            }
+            p {
+                font-size: .7rem;
+                padding-left: 1vh;
+                color: #1c3661;
+                font-weight: 600;
+            }
+        } 
+    }
+    .price {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-weight: 900;
+        font-size: 2rem;
+        p {
+            width: 100%;
+            text-align: right;
+            span {
+                font-weight: 700;
+            }
+        }
+        .ref {
+            font-size: .7rem;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.wrapper {
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    img {
+        cursor: zoom-in;
+    }
+    .main_img {
+        width: 62.5%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .other_img {
+        width: 35%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vh;
+        row-gap: 2vh;
+        position: relative;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            &:last-of-type {
+                opacity: .3;
+            }
+        }
+        .all_img {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        color: white;
+        background: #1c3661;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        cursor: pointer;
+        }
+    }
+}

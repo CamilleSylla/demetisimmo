@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "nom": "Niktash",
+        "prenom": "Navid",
+        "poste": "Directeur d'agence",
+        "email":"navid@demetisimmo.fr",
+        "main_img": "https://media-exp1.licdn.com/dms/image/C4D03AQEGyyD-as4X8w/profile-displayphoto-shrink_200_200/0/1609420155019?e=1634774400&v=beta&t=JpNsc9BWAv9DwKAFi_hnFH7ruahgWGXVxyC4_rmS0vc"
+    },
+    {
+        "id": 2,
+        "nom": "Beasse",
+        "prenom": "Teddy",
+        "poste": "Co-Gérant Demetis Immo",
+        "email":"teddy@demetisimmo.fr",
+        "main_img": "https://media-exp1.licdn.com/dms/image/C4D03AQFzO1RJhaIeFw/profile-displayphoto-shrink_200_200/0/1598338444082?e=1634774400&v=beta&t=oxthvZqh_WA7anSb1C9cNXxycNRC2JucrqCb2NMhInw"
+
+    }
+]

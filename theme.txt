@@ -2,7 +2,9 @@ colors :
 - white = #F2F2F2
 - p => grey = #262626
 - bleu demetis = #1c3661
--
+- or = #A67D03
 -
 
 box-shadow : box-shadow: 0px 20px 20px 4px rgba(#1c3661, 0.7);
+h1 petit : font-size: 1.5rem;
+h1 moyen : font-size: 2rem;
