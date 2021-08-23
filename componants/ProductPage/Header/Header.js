@@ -33,7 +33,8 @@ export default function Header({ product }) {
         </div>
       </div>
       <div className={style.price}>
-          <span><p>{product.prix}€</p></span>
+          <p>{product.prix}€</p>
+          <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.ref}</p>
       </div>
     </section>
   );
