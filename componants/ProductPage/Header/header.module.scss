@@ -44,5 +44,16 @@
         bottom: 0;
         font-weight: 900;
         font-size: 2rem;
+        p {
+            width: 100%;
+            text-align: right;
+            span {
+                font-weight: 700;
+            }
+        }
+        .ref {
+            font-size: .7rem;
+            font-weight: 500;
+        }
     }
 }
