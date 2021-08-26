@@ -3,7 +3,6 @@ import style from './cards.module.scss'
 import Team from '../../../Json/Team.json'
 
 export default function Cards ({data}) {
-    console.log(data);
 
     const Disponibilite = () => {
 
