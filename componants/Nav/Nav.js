@@ -63,7 +63,9 @@ export default function Nav () {
                     )
                 })}
             </ul>
+            <Link href="/contact">
             <button>Contact</button>
+            </Link>
         </nav>
     )
 }
