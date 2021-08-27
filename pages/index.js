@@ -9,6 +9,7 @@ import avis from '../Json/Avis.json'
 import team from '../Json/Team.json'
 import Team from '../componants/Team/Home/Team'
 import WhyUs from '../componants/WhyUS/WhyUs'
+import Fonctionnement from '../componants/Fonctionnement/Fonctionnement'
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       <Slideshow houses={house}/>
       <WhyUs/>
       <Avis avis={avis}/>
+      <Fonctionnement/>
       <Team limit={3} team={team}/>
     </div>
   )
