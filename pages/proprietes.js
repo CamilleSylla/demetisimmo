@@ -7,7 +7,7 @@ import Search from "../componants/Search/Search";
 import Spacing from "../componants/Spacing/spacing";
 
 export default function Proprietes() {
-    const [map, setMap] = useState(false)
+    const [map, setMap] = useState(true)
 
   const list = {
     display: "flex",
@@ -33,7 +33,7 @@ export default function Proprietes() {
       <Spacing value="10vh" />
       <CoolForm hideStatus={map} hide={setMap}/>
       <section style={list}>
-        <HouseList />
+        <HouseList mapStatus={map}/>
         {map ? <Map/> : null}
           
       </section>

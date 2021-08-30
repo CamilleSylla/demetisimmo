@@ -34,7 +34,7 @@ export default function CoolForm ({hide, hideStatus}) {
         }
        
 
-    }, [active || hideStatus])
+    }, [hideStatus])
 
     const HideMap = ({status}) => {
 

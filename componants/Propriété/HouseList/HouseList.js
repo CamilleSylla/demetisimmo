@@ -2,8 +2,9 @@ import style from './houselist.module.scss'
 import houses from '../../../Json/House.json'
 import Cards from '../../Products/Cards/Cards'
 
-export default function HouseList () {
+export default function HouseList ({mapStatus}) {
 
+    const GridStyle = {}
 
     return (
         <div className={style.wrapper}>
@@ -15,7 +16,6 @@ export default function HouseList () {
                 {houses.map((el, i) => {
                     return <Cards key={i} data={el}/>
                 })}
-                
             </div>
         </div>
     )
