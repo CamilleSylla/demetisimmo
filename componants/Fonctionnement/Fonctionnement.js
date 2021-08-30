@@ -5,19 +5,19 @@ export default function Fonctionnement () {
     const cardData = [
         {
             title: "Recherche de bien",
-            desc: ["Accompagnement dans la visite", "Étude de projet (rentabilité, faisabilité etc...)", "Définition de l'enveloppe travaux."],
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/area.svg",
             color: ""
         },
         {
             title: "L'acquisition",
-            desc: ["prise en charge de A a Z avec nos partenaires notaires", "Édition des devis travauux"],
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/area.svg",
             color: ""
         },
         {
             title: "La rénovation",
-            desc: ["Tarifs pré-négociés avec nos partenaires", "Mise aux goûts du jour", "Suivi des travux"],
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/area.svg",
             color: ""
         },
@@ -31,19 +31,25 @@ export default function Fonctionnement () {
                     <img src={el.icon}/>
                 </div>
                 <h1>{el.title}</h1>
-                <ul>
+                {/* <ul>
                     {el.desc.map((el, i) => {
                         return <li key={i}>{el}</li>
                     })}
-                </ul>
-                {/* <p> {el.desc} </p> */}
+                </ul> */}
+                <p> {el.desc} </p>
             </article>
         )
     }
 
     return (
         <section className={style.wrapper}>
+            <div className={style.title}>
+                <span>Fonctionnement</span>
             <h1>Un fonctionnement simple</h1>
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.</p>
+
+            </div>
             <div className={style.cards_wrapper}>
                 {cardData.map((el, i) => {
                     return <Card el={el}/>
