@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
+import Filters from '../Filters/Filters'
 import style from './coolform.module.scss'
 
 export default function CoolForm () {
     const [active, setActive ] = useState(false) 
+    const [filter, setFilter] = useState(false)
     const form = useRef()
 
     const onSubmit = () => {
@@ -11,23 +13,24 @@ export default function CoolForm () {
 
     useEffect(() => {
         const formStyle = form.current.style
-        console.log(active);
         if (active) {
             formStyle.transform = "translate3d(0,0,0 )"
         } else {
             formStyle.transform = "translate3d(0,100%,0 )"
-
         }
+       
+
     }, [active])
 
     return (
         <>
+        <Filters toogle={filter}/>
         <section className={style.actions}>
 
         <div className={style.wrap}>
 
         <div className={style.form} onClick={() => setActive(!active)}>Rechercher</div>
-        <div className={style.filters} onClick={() => setActive(!active)}>Filtrer</div>
+        <div className={style.filters} onClick={() => setFilter(!filter)}>Filtrer</div>
         </div>
         </section>
         <div ref={form} className={style.wrapper}>
