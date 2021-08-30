@@ -1,15 +1,21 @@
+import { useState } from "react";
 import Header from "../componants/Header/Header";
 import CoolForm from "../componants/Propriété/CoolForm/CoolForm";
 import HouseList from "../componants/Propriété/HouseList/HouseList";
+import Map from "../componants/Propriété/Map/Map";
 import Search from "../componants/Search/Search";
 import Spacing from "../componants/Spacing/spacing";
 
 export default function Proprietes() {
+    const [map, setMap] = useState(false)
+
   const list = {
     display: "flex",
     width: "90%",
     margin: "0 auto",
     height: "auto",
+    justifyContent: "space-between",
+    position: "relative"
   };
   const search = {
     width: "80%",
@@ -25,12 +31,11 @@ export default function Proprietes() {
       />
       <div style={search}>{/* <Search/> */}</div>
       <Spacing value="10vh" />
-      <CoolForm />
+      <CoolForm hideStatus={map} hide={setMap}/>
       <section style={list}>
         <HouseList />
-        <div style={{ width: "50%", maxHeight: "50vh", background: "red" }}>
-          Map
-        </div>
+        {map ? <Map/> : null}
+          
       </section>
     </div>
   );
