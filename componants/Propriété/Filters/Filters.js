@@ -14,8 +14,8 @@ export default function Filters ({ toogle}) {
         }
     }, [toogle])
     return (
-        <section ref={filter} className={style.wrapper}>
+        <div ref={filter} className={style.wrapper}>
 
-        </section>
+        </div>
     )
 }

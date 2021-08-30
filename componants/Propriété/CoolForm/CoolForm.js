@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import Filters from '../Filters/Filters'
 import style from './coolform.module.scss'
 
-export default function CoolForm () {
+export default function CoolForm ({hide, hideStatus}) {
     const [active, setActive ] = useState(false) 
     const [filter, setFilter] = useState(false)
     const form = useRef()
+    const hidebtn = useRef()
+    const hideBTN = useRef()
 
     const onSubmit = () => {
         setActive(false)
@@ -13,14 +15,38 @@ export default function CoolForm () {
 
     useEffect(() => {
         const formStyle = form.current.style
+        const hideBTNcursor = hidebtn.current.style
+        const HideBTN = hideBTN.current.style
         if (active) {
             formStyle.transform = "translate3d(0,0,0 )"
         } else {
             formStyle.transform = "translate3d(0,100%,0 )"
         }
+
+        if (hideStatus) {
+            hideBTNcursor.left = "60%"
+            hideBTNcursor.background = "#1c3661"
+            HideBTN.background = "#F2F2F2"
+        } else {
+            hideBTNcursor.left = "5%"
+            hideBTNcursor.background = "#F2F2F2"
+            HideBTN.background = "#1c3661"
+        }
        
 
-    }, [active])
+    }, [active || hideStatus])
+
+    const HideMap = ({status}) => {
+
+        return (
+            <div className={style.hide}>
+                <p>Cacher la carte</p>
+                <div ref={hideBTN} onClick={() => hide(!hideStatus)}>
+                    <div ref={hidebtn} className={style.pointer} />
+                </div>
+            </div>
+        )
+    }
 
     return (
         <>
@@ -31,6 +57,7 @@ export default function CoolForm () {
 
         <div className={style.form} onClick={() => setActive(!active)}>Rechercher</div>
         <div className={style.filters} onClick={() => setFilter(!filter)}>Filtrer</div>
+        <HideMap status={true}/>
         </div>
         </section>
         <div ref={form} className={style.wrapper}>
