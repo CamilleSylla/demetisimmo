@@ -1,0 +1,54 @@
+.wrapper {
+    height: auto;
+    padding: 1vh 0 1vh 0;
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease .5s;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    z-index: 5;
+    background: #F2F2F2;
+    width: 100%;
+    bottom: 0;
+    h1 {
+        max-width: 60%;
+        font-weight: 900;
+        font-size: 2rem;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        margin-bottom: 4vh;
+        color: #1c3661;
+        border-bottom: 2px solid #1c3661;
+    }
+    p {
+        padding: 1vh 0 1vh 0;
+    }
+    input, select {
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid #1c3661;
+        margin-left: .5rem;
+        font-weight: 900;
+        color: #1c3661;
+    }
+    input {
+        width: 5%;
+    }
+    button {
+        margin-top: 5vh;
+    }
+}
+.toggle {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    background: #1c3661;
+    color: white;
+    padding: 1vh 4vh 2vh 4vh;
+    border-radius:50% 50% 0% 0% ;
+    font-size: .8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    bottom: 0;
+    z-index: 6;
+}

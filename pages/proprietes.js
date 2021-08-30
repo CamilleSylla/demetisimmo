@@ -1,4 +1,5 @@
 import Header from "../componants/Header/Header";
+import CoolForm from "../componants/Propriété/CoolForm/CoolForm";
 import HouseList from "../componants/Propriété/HouseList/HouseList";
 import Search from "../componants/Search/Search";
 import Spacing from "../componants/Spacing/spacing";
@@ -20,8 +21,9 @@ export default function Proprietes () {
             <Spacing value="10vh"/>
             <Header pageTitle="Nos propriétés à vendre" desc="Retrouvez l'ensemble de nos propriétés disponible chez Demetis Immo !"/>
             <div style={search}>
-                <Search/>
+                {/* <Search/> */}
             </div>
+                <CoolForm/>
             <Spacing value="10vh"/>
             <section style={list}>
                 <HouseList/>
