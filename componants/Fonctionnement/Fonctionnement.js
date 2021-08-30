@@ -4,20 +4,20 @@ export default function Fonctionnement () {
 
     const cardData = [
         {
-            title: "Discutons de votre projet",
-            desc: "Lorem ipsum ",
+            title: "Recherche de bien",
+            desc: ["Accompagnement dans la visite", "Étude de projet (rentabilité, faisabilité etc...)", "Définition de l'enveloppe travaux."],
             icon: "/icon/blue/area.svg",
             color: ""
         },
         {
-            title: "Discutons de votre projet",
-            desc: "Lorem ipsum ",
+            title: "L'acquisition",
+            desc: ["prise en charge de A a Z avec nos partenaires notaires", "Édition des devis travauux"],
             icon: "/icon/blue/area.svg",
             color: ""
         },
         {
-            title: "Discutons de votre projet",
-            desc: "Lorem ipsum ",
+            title: "La rénovation",
+            desc: ["Tarifs pré-négociés avec nos partenaires", "Mise aux goûts du jour", "Suivi des travux"],
             icon: "/icon/blue/area.svg",
             color: ""
         },
@@ -31,7 +31,12 @@ export default function Fonctionnement () {
                     <img src={el.icon}/>
                 </div>
                 <h1>{el.title}</h1>
-                <p> {el.desc} </p>
+                <ul>
+                    {el.desc.map((el, i) => {
+                        return <li key={i}>{el}</li>
+                    })}
+                </ul>
+                {/* <p> {el.desc} </p> */}
             </article>
         )
     }
