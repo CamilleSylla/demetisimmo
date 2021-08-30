@@ -1,7 +1,9 @@
 .wrapper {
-    height: 50vh;
+    padding: 10vh 0 10vh 0;
+    height: 70vh;
 
     h1 {
+        margin-left: 10%;
         font-weight: 900;
     }
     .cards_wrapper {
@@ -38,6 +40,8 @@
                 }
             }
             h1 {
+                height: auto;
+                margin: 0;
                 margin-top: 3%;
                 font-size: .8rem;
                 text-transform: capitalize;
