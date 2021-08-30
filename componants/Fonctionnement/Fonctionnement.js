@@ -6,19 +6,19 @@ export default function Fonctionnement () {
         {
             title: "Recherche de bien",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
-            icon: "/icon/blue/area.svg",
+            icon: "/icon/blue/loupe.svg",
             color: ""
         },
         {
             title: "L'acquisition",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
-            icon: "/icon/blue/area.svg",
+            icon: "/icon/blue/key.svg",
             color: ""
         },
         {
             title: "La rénovation",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
-            icon: "/icon/blue/area.svg",
+            icon: "/icon/blue/travaux.svg",
             color: ""
         },
     ]
