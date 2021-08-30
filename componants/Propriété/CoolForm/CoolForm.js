@@ -22,8 +22,15 @@ export default function CoolForm () {
 
     return (
         <>
-        <div className={style.toggle} onClick={() => setActive(!active)}>Rechercher</div>
-        <section ref={form} className={style.wrapper}>
+        <section className={style.actions}>
+
+        <div className={style.wrap}>
+
+        <div className={style.form} onClick={() => setActive(!active)}>Rechercher</div>
+        <div className={style.filters} onClick={() => setActive(!active)}>Filtrer</div>
+        </div>
+        </section>
+        <div ref={form} className={style.wrapper}>
             <h1>Trouver le bien qui me correspond</h1>
             <p>
                 Je suis a la recherche d'un{"(e)"} {" "}
@@ -49,7 +56,7 @@ export default function CoolForm () {
                 , pour un budget minimum de <input type="number" min="0"/>€
             </p>
             <button onClick={onSubmit}>Soumettre</button>
-        </section>
+        </div>
         </>
     )
 }

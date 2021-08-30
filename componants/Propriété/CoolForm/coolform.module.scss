@@ -38,17 +38,40 @@
         margin-top: 5vh;
     }
 }
-.toggle {
-    position: fixed;
-    left: 50%;
-    transform: translate3d(-50%,0,0);
-    background: #1c3661;
-    color: white;
-    padding: 1vh 4vh 2vh 4vh;
-    border-radius:50% 50% 0% 0% ;
-    font-size: .8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    bottom: 0;
-    z-index: 6;
+
+
+.actions {
+    height: auto;
+    min-height: 12vh;
+    position: relative;
+    .wrap {
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        right: 5%;
+        .form, .filters {
+            
+            width: 20vh;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 6vh;
+            font-size: .8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            bottom: 0;
+            z-index: 6;
+            border-radius: 5px;
+        }
+        .form {
+            background: #1c3661;
+            color: white;
+            margin-right: 5vh;
+        }
+        .filters {
+            color: #1c3661;
+            border: 2px solid #1c3661;
+        }
+    }
+    
 }
