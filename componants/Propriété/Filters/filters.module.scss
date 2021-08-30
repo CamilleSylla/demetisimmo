@@ -1,0 +1,11 @@
+.wrapper {
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translate3d(-100%,0,0);
+    transition: all ease .5s;
+    background: chartreuse;
+    z-index: 500;
+}
