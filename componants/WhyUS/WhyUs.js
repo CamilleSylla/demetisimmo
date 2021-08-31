@@ -7,6 +7,7 @@ export default function WhyUs() {
     <section className={style.wrapper}>
       <article className={style.content}>
         <div>
+            <span>Nos Services</span>
           <h1>Pourquoi nous choisir ?</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
