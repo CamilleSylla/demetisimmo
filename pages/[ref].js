@@ -3,8 +3,12 @@ import Spacing from "../componants/Spacing/spacing";
 import Header from '../componants/ProductPage/Header/Header';
 import Gallery from '../componants/ProductPage/Gallery/Gallery';
 import Description from '../componants/ProductPage/Informations/Description/Description';
+import EnWrap from '../componants/ProductPage/Energie/EnWrap';
 
 export default function Product ({product}) {
+
+    const {ges} = product
+    const {energie} = product
 
     return (
         <div>
@@ -15,6 +19,7 @@ export default function Product ({product}) {
             <Spacing value='5vh'/>
             <Description product={product} />
             <Spacing value='5vh'/>
+            <EnWrap ges={ges} energie={energie}/>
         </div>
     )
 }

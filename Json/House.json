@@ -18,7 +18,9 @@
         "Ville": "Le Mans",
         "autor": 2,
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
-        "disponible": true
+        "disponible": true,
+        "energie" : 312,
+        "ges" : 12
     },
     {   
         "ref": "apt-1234",
@@ -39,7 +41,9 @@
         "Ville": "Changé",
         "autor": 1,
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
-        "disponible": true
+        "disponible": true,
+        "energie" : 89,
+        "ges" : 36
     },
     {   
         "ref": "apt-12345",
@@ -60,6 +64,8 @@
         "Ville": "Ruaudin",
         "autor": 1,
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
-        "disponible": true
+        "disponible": true,
+        "energie" : 36,
+        "ges" : 29
     }
 ]
