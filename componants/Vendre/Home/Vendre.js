@@ -1,4 +1,4 @@
-import Illustrate from "./Illustrate/illustrate";
+import Illustrate from "./Illustrate/Illustrate";
 import style from "./vendre.module.scss";
 
 export default function Vendre() {
