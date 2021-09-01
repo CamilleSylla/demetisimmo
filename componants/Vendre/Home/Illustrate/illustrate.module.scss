@@ -1,0 +1,24 @@
+.wrapper {
+    height: 90vh;
+    width: 90vh;
+    top: 50%;
+    position: absolute;
+    background: rgba(#1c3661, .1);
+    border-radius: 50px;
+    transform: translate3d(-65%,-50%,0) rotate(45deg);
+    // transform: translate3d(0,-50%,0);
+    .square {
+        position: absolute;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 180%;
+            height: 150%;
+            object-fit: cover;
+            transform: rotate(-45deg);
+        }
+    }
+}
