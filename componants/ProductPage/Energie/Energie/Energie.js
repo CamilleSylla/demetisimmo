@@ -60,9 +60,6 @@ export default function Energie ({ges}) {
             return el;
           }
         });
-        console.log("All boxes",Boxes);
-        console.log("Found good box",Boxes[NodeIndex]);
-        console.log("Get Position",tracker.current.getBoundingClientRect());
         cursor.current.style.left = `${Boxes[NodeIndex].getBoundingClientRect().x}px`
         cursor.current.style.top = `${tracker.current.getBoundingClientRect().top}px`
       }

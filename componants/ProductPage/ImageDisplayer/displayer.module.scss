@@ -1,5 +1,44 @@
 .wrapper {
-    position: absolute;
+    position: fixed;
     top: -100%;
-    background: red;
+    left: 0;
+    background: rgba(#F2F2F2,.3);
+    backdrop-filter: blur(20px);
+    z-index: 250;
+    transition: all ease .5s;
+    .close {
+        z-index: 1;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background: red;
+        font-weight: 900;
+    }
+    .logo {
+        width: 5vw;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+    }
+    .main {
+        position: absolute;
+        width: 60%;
+        height: 75vh;
+        top: 50%;
+        right: 10%;
+    transform: translate3d(0, -50%,0);
+    object-fit: contain;
+    }
 }
+.wrapper::-webkit-scrollbar {
+    width: 12px; 
+}
+.wrapper::-webkit-scrollbar-track {
+    background: orange; /* color of the tracking area */
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: blue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid orange; /* creates padding around scroll thumb */
+  }

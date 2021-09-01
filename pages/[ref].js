@@ -10,19 +10,20 @@ import { useState } from 'react';
 
 export default function Product ({product}) {
     const [gallery, setGallery] = useState({
-
+        all: product.gallery,
+        target: product.gallery[0],
+        active: false
     })
     const {ges, energie, prix} = product
-    console.log(product);
 
 
     return (
         <div style={{position: "relative"}}>
-            <Displayer/>
+            <Displayer product={product} gallery={gallery} setImgUrl={setGallery}/>
             <Spacing value='20vh'/>
             <Header product={product}/>
             <Spacing value='5vh'/>
-            <Gallery product={product}/>
+            <Gallery product={product} gallery={gallery} setImgUrl={setGallery}/>
             <Spacing value='5vh'/>
             <Description product={product} />
             <Spacing value='5vh'/>
