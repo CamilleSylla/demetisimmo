@@ -25,7 +25,7 @@ export default function Cards ({data}) {
         <article className={style.wrapper}>
                 <Agent/>
             <img className={style.main_img} src={data.main_img}/>
-            <span className={style.price}>{data.prix}€</span>
+            <span className={style.price}>{data.prix.toLocaleString()}€</span>
             <h1>{data.title}.</h1>
             <div className={style.infos_icon}>
             <div className={style.icon_wrapper}>

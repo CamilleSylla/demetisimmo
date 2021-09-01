@@ -1,0 +1,135 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  width: 65vh;
+  height: 65vh;
+  right: 10%;
+  border-radius: 50%;
+  border: 2px solid #1c3661;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  article {
+    position: absolute;
+    z-index: 5;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    background: #F2F2F2;
+    border-radius: 50%;
+    border: 2px solid #1c36615e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px 12px #F2F2F2;
+    cursor: pointer;
+    transition: all ease .5s;
+    &:hover {
+        box-shadow: 0px 0px 8px 12px #1c36615e;
+
+    }
+    img {
+        width: 5vh;
+    }
+    h1 {
+      font-size: .8rem;
+      font-weight: 900;
+      margin-top: 10%;
+    }
+    &:first-of-type {
+      top: 0;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+    &:nth-of-type(2) {
+      right: 0;
+      top: 50%;
+      transform: translate3d(50%, -50%, 0);
+    }
+    &:nth-of-type(3) {
+      bottom: 0;
+      left: 50%;
+      transform: translate3d(-50%, 50%, 0);
+    }
+    &:last-of-type {
+      left: 0;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+  .spinning {
+      position: absolute;
+      width: 58%;
+    animation: rotate 5s infinite linear;
+  }
+  .acc360 {
+      width: 35%;
+      text-align: center;
+      font-weight: 900;
+      font-size: .8rem;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 3;
+      perspective: 100px;
+      cursor: pointer;
+      p {
+          text-align: center;
+          height: 2vh;
+        }
+        img {
+          transition: all ease-in-out 1s;
+          width: 10vh;
+      }
+      &:hover {
+          img {
+              transform: rotateY(720deg) scale(.5);
+          }
+      }
+  }
+  span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    .inside {
+        position: absolute;
+        text-align: center;
+        background: #F2F2F2;
+        width: 70%;
+        min-height: 70%;
+        transition: all ease .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 8vh;
+        }
+        h1 {
+            margin-top: 5%;
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+        p {
+            margin-top: 5%;
+            font-size: .8rem;
+            text-align: center;
+        }
+    }
+  }
+  
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
