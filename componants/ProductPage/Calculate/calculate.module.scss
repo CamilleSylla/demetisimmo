@@ -60,6 +60,15 @@
         opacity: .3;
         transform: translate3d(25%,0,0);
     }
+    .totalPret {
+        position: absolute;
+        bottom: 5%;
+        font-size: .8rem;
+        left: 50%;
+        line-height: initial;
+        transform: translate3d(-50%, 0 ,0);
+        color: #F2F2F2;
+    }
     button {
         position: absolute;
         bottom: 5%;

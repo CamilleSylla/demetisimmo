@@ -9,6 +9,7 @@ export default function Calculate({ prix }) {
     years: 10,
   });
   let result = "Chargement..."
+  let pretTotal = ""
   const monthInAYear = 12;
   const yearsArray = [10,15,20,25,30]
 
@@ -17,6 +18,7 @@ export default function Calculate({ prix }) {
     const total = start * data.taux;
     const total_month = data.years * monthInAYear;
     const finalResult = total / total_month;
+    pretTotal = total
     result = Math.round(finalResult * 100) / 100 ;
     console.log("MONTANT PRET", Math.round(finalResult * 100) / 100);
   }
@@ -64,6 +66,7 @@ export default function Calculate({ prix }) {
             <h3>Vos mensualités :</h3>
           <p>{result.toLocaleString() + " "}€ / mois</p>
         </div>
+      <p className={style.totalPret}> Coût totale du pret {"(hors assurance)"} : {pretTotal}€</p>
       </div>
       <img className={style.logo} src="/Logo/Logo.jpg"/>
     </section>
