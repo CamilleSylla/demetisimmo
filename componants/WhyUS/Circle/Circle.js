@@ -70,30 +70,30 @@ export default function Circle() {
       }
     }
 
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: animation_start.current,
-          start: "top bottom",
-          markers: true
-        },
-      })
-      .from(animation_start.current, {
-        opacity: 0,
-        duration: 1
-      })
-      .from(circle.current.childNodes, {
-        opacity: 0,
-        duration: .5,
-        stagger: .5
-      })
-      .from(animation_arrow.current, {
-        opacity : 0,
-        duration: 1
-      })
-      .from(animation_360.current, {
-        scale : 0,
-        duration: .5
-      }, "-=.5")
+      // gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: animation_start.current,
+      //     start: "top bottom",
+      //     markers: true
+      //   },
+      // })
+      // .from(animation_start.current, {
+      //   opacity: 0,
+      //   duration: 1
+      // })
+      // .from(circle.current.childNodes, {
+      //   opacity: 0,
+      //   duration: .5,
+      //   stagger: .5
+      // })
+      // .from(animation_arrow.current, {
+      //   opacity : 0,
+      //   duration: 1
+      // })
+      // .from(animation_360.current, {
+      //   scale : 0,
+      //   duration: .5
+      // }, "-=.5")
     
 
     
