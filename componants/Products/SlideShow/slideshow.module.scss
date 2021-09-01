@@ -6,6 +6,20 @@
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
+        span {
+            color: #1c3661;
+            font-weight: 900;
+        }
+        .main {
+            padding-top: 2vh;
+            font-weight: 900;
+            font-size: 2rem;
+            width: 50%;
+            span {
+                color: #1c3661;
+                font-weight: 900;
+            }
+        }
         h1 {
             width: 80%;
             font-weight: 900;
