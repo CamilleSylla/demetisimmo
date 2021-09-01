@@ -5,15 +5,20 @@ import Gallery from '../componants/ProductPage/Gallery/Gallery';
 import Description from '../componants/ProductPage/Informations/Description/Description';
 import EnWrap from '../componants/ProductPage/Energie/EnWrap';
 import Calculate from '../componants/ProductPage/Calculate/Calculate';
+import Displayer from '../componants/ProductPage/ImageDisplayer/Displayer';
+import { useState } from 'react';
 
 export default function Product ({product}) {
+    const [gallery, setGallery] = useState({
 
-    const {ges} = product
-    const {energie} = product
-    const {prix} = product
+    })
+    const {ges, energie, prix} = product
+    console.log(product);
+
 
     return (
-        <div>
+        <div style={{position: "relative"}}>
+            <Displayer/>
             <Spacing value='20vh'/>
             <Header product={product}/>
             <Spacing value='5vh'/>

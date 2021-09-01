@@ -16,7 +16,7 @@ export default function Gallery ({product}) {
         <section className={style.wrapper}>
             <img src={product.main_img} className={style.main_img}/>
             <div className={style.other_img}>
-                {imgArray.map((url, i) => {
+                {product.gallery.map((url, i) => {
                     if (i <= 3) {
                         return (
                             <>
