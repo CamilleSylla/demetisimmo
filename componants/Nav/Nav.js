@@ -14,8 +14,8 @@ export default function Nav () {
             url: "/"
         },
         {
-            name: "Services",
-            url: "/"
+            name: "Vendre",
+            url: "/vendre"
         },
         {
             name: "Propriétés",
