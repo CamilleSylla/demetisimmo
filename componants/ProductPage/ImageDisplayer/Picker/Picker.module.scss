@@ -1,0 +1,20 @@
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate3d(0, -50%,0);
+    height: 80%;
+    width: 12vw;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    img {
+        cursor: pointer;
+        width: 10vw;
+        margin-bottom: 2vw;
+        border-radius: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    
+}

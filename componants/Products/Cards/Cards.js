@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import style from './cards.module.scss'
+import Team from '../../../Json/Team.json'
 
 export default function Cards ({data}) {
 
@@ -12,10 +13,17 @@ export default function Cards ({data}) {
         )
     }
 
+    const Agent = () => {
+        const agent = Team.find(el => el.id == data.autor )
+        return (
+            <img src={agent.main_img} className={style.agent}/>
+        )
+    }
+
     return (
         <Link href={`/${data.ref}`}>
         <article className={style.wrapper}>
-
+                <Agent/>
             <img className={style.main_img} src={data.main_img}/>
             <span className={style.price}>{data.prix.toLocaleString()}€</span>
             <h1>{data.title}.</h1>

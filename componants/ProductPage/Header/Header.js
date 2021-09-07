@@ -33,7 +33,7 @@ export default function Header({ product }) {
         </div>
       </div>
       <div className={style.price}>
-          <p>{product.prix}€</p>
+          <p>{product.prix.toLocaleString()}€</p>
           <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.ref}</p>
       </div>
     </section>
