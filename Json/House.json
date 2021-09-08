@@ -17,6 +17,39 @@
         "cuisine-equipe": false,
         "Ville": "Le Mans",
         "autor": 2,
+        "gallery": [
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+        ],
+        "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
+        "disponible": true,
+        "energie" : 312,
+        "ges" : 12
+    },
+    {
+        "ref": "apt-123",
+        "title": "Maison citadine au coeur du Mans",
+        "main_img": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+        "piece": 5,
+        "surface": 250,
+        "type": "Maison",
+        "prix": 230000,
+        "chambres": 4,
+        "terrain": 630,
+        "sdb": 2,
+        "garage": 1,
+        "cave": 1,
+        "etages": 1,
+        "sejour": 40,
+        "cuisine-equipe": false,
+        "Ville": "Le Mans",
+        "autor": 2,
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
         "disponible": true
     },
@@ -38,8 +71,20 @@
         "cuisine-equipe": true,
         "Ville": "Changé",
         "autor": 1,
+        "gallery": [
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+        ],
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
-        "disponible": true
+        "disponible": true,
+        "energie" : 89,
+        "ges" : 36
     },
     {   
         "ref": "apt-12345",
@@ -59,7 +104,19 @@
         "cuisine-equipe": true,
         "Ville": "Ruaudin",
         "autor": 1,
+        "gallery": [
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "https://images.unsplash.com/photo-1592595896551-12b371d546d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+        ],
         "desc": "Century 21 Chaussée Royale vous propose à la vente cette maison mitoyenne idéalement située dans le secteur de l'Eperon. A moins de 5 min des axes routiers, et à proximité directe des commerces et écoles, cette maison à rafraichir présente bien des atouts.\nAu rez-de-chaussée, vous pourrez profiter d'un bel espace séjour - salle à manger de 24m2, ouvert sur la varangue et le jardin.\nUne salle de bain avec baignoire, un WC indépendant et une cuisine viennent compléter ce niveau.\nA l'étage vous retrouverez trois belles chambres de 9m2 à 12.50m2, avec vue dégagée.\nL'extérieur n'est pas en reste, car vous pourrez profiter de différents espaces arborés, d'une grande terrasse couverte pour vos fêtes de famille et la possibilité de garer un véhicule.\nC'est une opportunité unique, alors dépêchez vous, contactez nous vite pour la visiter!",
-        "disponible": true
+        "disponible": true,
+        "energie" : 36,
+        "ges" : 29
     }
 ]

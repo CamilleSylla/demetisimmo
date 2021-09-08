@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100%;
+    height: 20vh;
+    background: rgba(#1c3661, .7);
+    position: relative;
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate3d(0, -50%, 0);
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: .8rem;
+            color: white;
+        }
+    }
+}
