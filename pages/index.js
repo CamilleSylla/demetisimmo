@@ -7,7 +7,6 @@ import avis from '../Json/Avis.json'
 import team from '../Json/Team.json'
 import Team from '../componants/Team/Home/Team'
 import WhyUs from '../componants/WhyUS/WhyUs'
-import Fonctionnement from '../componants/Fonctionnement/Fonctionnement'
 import Vendre from '../componants/Vendre/Home/Vendre'
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <Vendre/>
       <WhyUs/>
       <Avis avis={avis}/>
-      <Fonctionnement/>
       <Team limit={3} team={team}/>
     </div>
   )
