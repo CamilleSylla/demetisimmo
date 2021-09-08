@@ -1,0 +1,17 @@
+.wrapper {
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+        font-weight: 900;
+        span {
+            color: #1c3661;
+            font-weight: 900;
+        }
+    }
+    .cards {
+        height: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

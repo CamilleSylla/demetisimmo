@@ -1,6 +1,5 @@
 import style from './vendu.module.scss'
-import houses from '../../../Json/House.json'
-export default function Vendu () {
+export default function Accompagnement () {
 
     return (
         <section className={style.wrapper}>
@@ -9,6 +8,7 @@ export default function Vendu () {
 
             </div>
             <article className={style.content}>
+              <span>L'accompagnement</span>
             <h1>
           Vous <span>accompagnez</span> dans la <span>vente</span> de votre bien
         </h1>
