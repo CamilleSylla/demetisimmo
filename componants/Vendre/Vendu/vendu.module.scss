@@ -1,0 +1,38 @@
+.wrapper {
+    width: 90%;
+    height: 70vh;
+    border-radius: 20px;
+    border: 2px solid #1c3661;
+    margin: 0 auto;
+    position: relative;
+    .illustration {
+position: absolute;
+right: 0;
+bottom: 0;
+    }
+    .content {
+        position: absolute;
+        left: 10vh;
+        top: 50%;
+        transform: translate3d(0, -50%,0);
+        width: 50%;
+        span {
+            color: #1c3661;
+            font-weight: 900;
+        }
+        h1 {
+            padding-top: 2vh;
+            font-weight: 900;
+            font-size: 2rem;
+            span {
+                font-weight: 900;
+            }
+        }
+        p {
+            padding-top: 2vh;
+        }
+        button {
+            margin-top: 10vh;            font-weight: 900;
+        }
+    }
+}

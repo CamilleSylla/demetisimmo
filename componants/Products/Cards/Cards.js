@@ -4,11 +4,19 @@ import Team from '../../../Json/Team.json'
 
 export default function Cards ({data}) {
 
+    const disponible = {
+        background : "#1c3661",
+    }
+
+    const vendu = {
+        background : "red",
+    }
+
     const Disponibilite = () => {
 
         return (
-            <div className={style.disponibility}>
-                <p>Disponible</p>
+            <div className={style.disponibility} style={data.disponible == true ? disponible : vendu}>
+                <p style={{color: "white"}}>{data.disponible == true ? "Disponible" : "Vendu"}</p>
             </div>
         )
     }

@@ -4,19 +4,19 @@ export default function Fonctionnement () {
 
     const cardData = [
         {
-            title: "Recherche de bien",
+            title: "Estimation et Optimisation",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/loupe.svg",
             color: ""
         },
         {
-            title: "L'acquisition",
+            title: "Diffusion et Visite",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/key.svg",
             color: ""
         },
         {
-            title: "La rénovation",
+            title: "Suivi et Accompagnement",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
             icon: "/icon/blue/travaux.svg",
             color: ""
