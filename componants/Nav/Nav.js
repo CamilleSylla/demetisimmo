@@ -43,6 +43,7 @@ export default function Nav () {
           }, "nav")
           .to(Logo.current, {
               height: "80%",
+              top: "10%",
               bottom: "10%",
           }, "nav")
 
@@ -51,14 +52,13 @@ export default function Nav () {
     return (
         <nav  className={style.wrapper}>
             <div ref={NavRef} className={style.background}/>
-            <img ref={Logo} src="/Logo/Logo.jpg" />
+            <img ref={Logo} src="/Logo/Logo.svg" />
             <ul>
                 {Menu.map((el, i) => {
 
                     return (
                         <Link href={`/${el.url}`}>
                             <li key={i}> {el.name} </li>
-
                         </Link>
                     )
                 })}
