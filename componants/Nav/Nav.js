@@ -23,7 +23,7 @@ export default function Nav () {
         },
         {
             name: "Notre Équipe",
-            url: "/"
+            url: "/equipe"
         },
     ]
 
