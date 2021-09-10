@@ -11,19 +11,19 @@ export default function Nav () {
     const Menu = [
         {
             name: "Accueil",
-            url: "/"
+            url: ""
         },
         {
             name: "Vendre",
-            url: "/vendre"
+            url: "vendre"
         },
         {
             name: "Propriétés",
-            url: "/proprietes"
+            url: "proprietes"
         },
         {
             name: "Notre Équipe",
-            url: "/equipe"
+            url: "equipe"
         },
     ]
 
@@ -52,7 +52,10 @@ export default function Nav () {
     return (
         <nav  className={style.wrapper}>
             <div ref={NavRef} className={style.background}/>
-            <img ref={Logo} src="/Logo/Logo.svg" />
+            <Link href="/">
+
+            <img style={{cursor: "pointer"}} ref={Logo} src="/Logo/Logo.svg" />
+            </Link>
             <ul>
                 {Menu.map((el, i) => {
 
