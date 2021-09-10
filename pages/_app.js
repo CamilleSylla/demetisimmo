@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <TeamProvider>
     <Nav/>
     <Component {...pageProps} />
+    <Footer/>
     </TeamProvider>
     </>
   )
