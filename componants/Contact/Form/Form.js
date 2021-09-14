@@ -8,14 +8,13 @@ export default function Form () {
 
     return (
         <form className={style.wrapper}>
-            <span>Contactez-nous ou l'un de nos agent !</span>
+            <p className={style.title}>Contactez-nous ou l'un de nos agent !</p>
             <input type="text" placeholder="Votre nom et prénom"/>
             <input type="email" placeholder="Votre adresse email"/>
             <select>
                 <option>Agence</option>
             </select>
             <input type="text" placeholder={subject}/>
-            <input type="text" placeholder="Sujet de votre message"/>
             <textarea placeholder="Votre message"/>
             <div>
             <input type="checkbox"/>

@@ -17,18 +17,37 @@
         border-radius: 10px;
         border: none;
     }
-    div {
-        margin: 5vh;
-        input {
-            margin: 0;
-        }
-        display: flex;
-        align-items: center;
+    textarea {
+        height: 10vh;
     }
-    span {
+    div {
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            padding: 0;
+            margin: 0;
+            height: 1rem;
+        }
+        p {
+            margin: 0;
+            width: 70%;
+            font-size: .7rem;
+            line-height: initial;
+        }
+    }
+    .title{
         color: #1c3661;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 900;
-        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2.5vh;
+    }
+    button {
+        margin-left: 15%;
+        margin-top: 5vh;
     }
 }

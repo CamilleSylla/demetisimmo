@@ -12,13 +12,13 @@ export default function Fonctionnement () {
         {
             title: "Diffusion et Visite",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
-            icon: "/icon/blue/key.svg",
+            icon: "/icon/blue/door_open.svg",
             color: ""
         },
         {
             title: "Suivi et Accompagnement",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
-            icon: "/icon/blue/travaux.svg",
+            icon: "/icon/blue/group.svg",
             color: ""
         },
     ]
