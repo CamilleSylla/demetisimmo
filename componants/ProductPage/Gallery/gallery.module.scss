@@ -22,16 +22,25 @@
         column-gap: 2vh;
         row-gap: 2vh;
         position: relative;
-        
-        img {
+        div {
             width: 100%;
             height: 100%;
-            object-fit: cover;
             border-radius: 10px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
             &:last-of-type {
-                opacity: .3;
+                img {
+                    opacity: .3;
+
+                }
             }
         }
+        
         .all_img {
         position: absolute;
         bottom: 5%;
