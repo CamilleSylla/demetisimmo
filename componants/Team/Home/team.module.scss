@@ -1,0 +1,36 @@
+.wrapper {
+    height: 120vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        h1 {
+            width: 50%;
+            right: 10vw;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-top: 2vh;
+            span {
+              font-weight: 900;
+              color: #1c3661;
+            }
+          }
+          p {
+              width: 40%;
+          }
+    }
+    .cards_grid {
+        margin: 0 auto;
+        height: 50%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5vh;
+    }
+}

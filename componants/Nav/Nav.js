@@ -11,19 +11,19 @@ export default function Nav () {
     const Menu = [
         {
             name: "Accueil",
-            url: "/"
+            url: ""
         },
         {
-            name: "Services",
-            url: "/"
+            name: "Vendre",
+            url: "vendre"
         },
         {
             name: "Propriétés",
-            url: "/proprietes"
+            url: "proprietes"
         },
         {
             name: "Notre Équipe",
-            url: "/"
+            url: "equipe"
         },
     ]
 
@@ -43,6 +43,7 @@ export default function Nav () {
           }, "nav")
           .to(Logo.current, {
               height: "80%",
+              top: "10%",
               bottom: "10%",
           }, "nav")
 
@@ -51,19 +52,23 @@ export default function Nav () {
     return (
         <nav  className={style.wrapper}>
             <div ref={NavRef} className={style.background}/>
-            <img ref={Logo} src="/Logo/Logo.jpg" />
+            <Link href="/">
+
+            <img style={{cursor: "pointer"}} ref={Logo} src="/Logo/Logo.svg" />
+            </Link>
             <ul>
                 {Menu.map((el, i) => {
 
                     return (
                         <Link href={`/${el.url}`}>
                             <li key={i}> {el.name} </li>
-
                         </Link>
                     )
                 })}
             </ul>
+            <Link href="/contact">
             <button>Contact</button>
+            </Link>
         </nav>
     )
 }

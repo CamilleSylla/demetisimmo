@@ -1,0 +1,59 @@
+.wrapper {
+    position: relative;
+    .content {
+        position: absolute;
+        height: 100%;
+        width: 40%;
+        left: 5%;
+        div {
+            text-align: right;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            height: 40%;
+            span {
+                font-weight: 900;
+          color: #1c3661;
+            }
+            h1 {
+                font-weight: 900;
+            }
+            p {
+                width: 100%;
+            }
+            button {
+                align-self: flex-end;
+            
+            }
+        }
+       
+    }
+    .cards {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        .left {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            right: 16%;
+            height: 100%;
+            width: 40%;
+        }
+    }
+}

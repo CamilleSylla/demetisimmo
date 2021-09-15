@@ -1,0 +1,53 @@
+.wrapper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    width: 50%;
+    border-radius: 10px;
+    padding:  5vh 0 5vh 0;
+    background: rgba(#1c3661, .3);
+    input, textarea, select {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        height: 5vh;
+        padding-left: 5vh;
+        margin-top: 5vh;
+        border-radius: 10px;
+        border: none;
+    }
+    textarea {
+        height: 10vh;
+    }
+    div {
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            padding: 0;
+            margin: 0;
+            height: 1rem;
+        }
+        p {
+            margin: 0;
+            width: 70%;
+            font-size: .7rem;
+            line-height: initial;
+        }
+    }
+    .title{
+        color: #1c3661;
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2.5vh;
+    }
+    button {
+        margin-left: 15%;
+        margin-top: 5vh;
+    }
+}
