@@ -1,10 +1,11 @@
+import axios from "axios";
 import Fonctionnement from "../componants/Fonctionnement/Fonctionnement";
 import Header from "../componants/Header/Header";
 import Spacing from "../componants/Spacing/spacing";
 import Form from "../componants/Vendre/Form/Form";
 import Selled from "../componants/Vendre/Selled/Selled";
 import Accompagnement from "../componants/Vendre/Vendu/Vendu";
-export default function Vendre () {
+export default function Vendre ({houses}) {
 
     return (
         <div>
@@ -17,9 +18,21 @@ export default function Vendre () {
         <Accompagnement/>
       <Fonctionnement/>
       <Spacing value="10vh"/>
-      <Selled/>
+      <Selled houses={houses}/>
       <Spacing value="10vh"/>
       <Form/>
         </div>
     )
+}
+
+export async function getServerSideProps () {
+
+    const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
+    .then(res => res.data.filter(el => el.acf.dispo != "Vrai"))
+    console.log("-------------------------------------------------------------------",houses);
+    return {
+        props: {
+            houses
+        }
+    }
 }
