@@ -8,19 +8,19 @@ export default function Gallery ({product, gallery, setImgUrl}) {
 
     return (
         <section className={style.wrapper}>
-            <img onClick={imgClick} src={product.main_img} className={style.main_img}/>
+            <img onClick={imgClick} src={product.acf.main_img} className={style.main_img}/>
             <div className={style.other_img}>
-                {product.gallery.map((url, i) => {
+                {product.acf_photo_gallery.map((url, i) => {
                     if (i <= 3) {
                         return (
-                            <>
-                            <img onClick={imgClick} src={url} />
-                            </>
+                            <div>
+                                <img onClick={imgClick} src={url.full_image_url} />
+                            </div>
                         )
                     }
                 })}
                 <div className={style.all_img}>
-                    {product.gallery.length - 5}+
+                    {product.acf_photo_gallery.length - 5}+
                 </div>
             </div>
         </section>

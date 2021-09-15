@@ -11,7 +11,7 @@ export default function Picker ({images, gallery, setImgUrl}) {
         <div className={style.wrapper}>
             {images.map((el, i) => {
                 return (
-                    <img onClick={imgClick} src={el} />
+                    <img onClick={imgClick} src={el.full_image_url} />
                 )
             })}
         </div>
