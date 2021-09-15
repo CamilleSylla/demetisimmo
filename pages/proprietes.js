@@ -5,8 +5,9 @@ import HouseList from "../componants/Propriété/HouseList/HouseList";
 import Map from "../componants/Propriété/Map/Map";
 import Search from "../componants/Search/Search";
 import Spacing from "../componants/Spacing/spacing";
+import axios from 'axios'
 
-export default function Proprietes() {
+export default function Proprietes({houses}) {
     const [map, setMap] = useState(false)
 
   const list = {
@@ -33,10 +34,20 @@ export default function Proprietes() {
       <Spacing value="10vh" />
       <CoolForm hideStatus={map} hide={setMap}/>
       <section style={list}>
-        <HouseList />
+        <HouseList houses={houses} />
         {map ? <Map/> : null}
           
       </section>
     </div>
   );
+}
+
+export async function getServerSideProps ( ) {
+  const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
+  .then(res => res.data.filter(el => el.acf.dispo === "Vrai"))
+  return {
+    props: {
+      houses
+    }
+  }
 }

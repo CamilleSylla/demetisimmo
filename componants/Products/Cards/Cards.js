@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import style from './cards.module.scss'
 import Team from '../../../Json/Team.json'
+import { useEffect, useState } from 'react'
+import axios from 'axios';
 
 export default function Cards ({data}) {
+
+    const [ agent, setAgent] = useState(false)
+    console.log(data);
 
     const disponible = {
         background : "#1c3661",
@@ -15,28 +20,35 @@ export default function Cards ({data}) {
     const Disponibilite = () => {
 
         return (
-            <div className={style.disponibility} style={data.disponible == true ? disponible : vendu}>
-                <p style={{color: "white"}}>{data.disponible == true ? "Disponible" : "Vendu"}</p>
+            <div className={style.disponibility} style={data.acf.dispo == "Vrai" ? disponible : vendu}>
+                <p style={{color: "white"}}>{data.acf.dispo == "Vrai" ? "Disponible" : "Vendu"}</p>
             </div>
         )
     }
 
     const Agent = () => {
-        const agent = Team.find(el => el.id == data.autor )
         return (
-            <img src={agent.main_img} className={style.agent}/>
+            <img src={agent} className={style.agent}/>
         )
     }
 
+    useEffect(() => {
+        const agent = axios.get(`${process.env.NEXT_PUBLIC_API}/agent/${data.acf.vendeur[0].ID}`)
+            .then(res => {
+                setAgent(res.data.acf.vignette)
+            })
+    }, [])
+
+
     return (
-        <Link href={`/${data.ref}`}>
+        <Link href={`/${data.id}`}>
         <article className={style.wrapper}>
                 <Agent/>
-            <img className={style.main_img} src={data.main_img}/>
-            <span className={style.price}>{data.prix.toLocaleString()}€</span>
-            <h1>{data.title}.</h1>
+            <img className={style.main_img} src={data.acf.main_img}/>
+            <span className={style.price}>{data.acf.prix.toLocaleString()}€</span>
+            <h1>{data.title.rendered}.</h1>
             <div className={style.infos_icon}>
-            <div className={style.icon_wrapper}>
+            {/* <div className={style.icon_wrapper}>
                     <img src="/icon/blue/area.svg"/>
                     <p>{data.surface}m²</p>
                 </div>
@@ -48,7 +60,7 @@ export default function Cards ({data}) {
                 <div className={style.icon_wrapper}>
                     <img src="/icon/blue/bed.svg"/>
                     <p>{data.chambres} chr{data.chambres > 1 ? "s" : null}</p>
-                </div>
+                </div> */}
                 <Disponibilite/>
             </div>
         </article>

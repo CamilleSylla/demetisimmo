@@ -2,7 +2,7 @@ import style from './houselist.module.scss'
 import houses from '../../../Json/House.json'
 import Cards from '../../Products/Cards/Cards'
 
-export default function HouseList () {
+export default function HouseList ({houses}) {
 
 
     return (

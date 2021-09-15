@@ -37,6 +37,7 @@ export default function Product ({product}) {
 }
 
 export async function getServerSideProps ({params}){
+    console.log(params.ref)
     const product = await axios.get(`http://api.demetisconseil.fr/wp-json/wp/v2/biens/${params.ref}`)
     .then( res => res.data)
 
