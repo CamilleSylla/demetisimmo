@@ -29,7 +29,6 @@ export async function getServerSideProps () {
 
     const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
     .then(res => res.data.filter(el => el.acf.dispo != "Vrai"))
-    console.log("-------------------------------------------------------------------",houses);
     return {
         props: {
             houses
