@@ -1,17 +1,17 @@
+import axios from 'axios'
 import { useEffect, useRef, useState } from 'react'
 import Filters from '../Filters/Filters'
 import style from './coolform.module.scss'
 
 export default function CoolForm ({hide, hideStatus}) {
-    const [active, setActive ] = useState(false) 
+    const [active, setActive ] = useState(true) 
     const [filter, setFilter] = useState(false)
+    const [formContent, setFormContent] = useState({
+
+    })
     const form = useRef()
     const hidebtn = useRef()
     const hideBTN = useRef()
-
-    const onSubmit = () => {
-        setActive(false)
-    }
 
     useEffect(() => {
         const formStyle = form.current.style
@@ -48,6 +48,30 @@ export default function CoolForm ({hide, hideStatus}) {
         )
     }
 
+    async function onChange (key, value) {
+
+        setFormContent({...formContent, [key]: value})
+        console.log(formContent);
+    }
+
+    async function Submit () {
+
+        const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`).then(res => res.data)
+        houses.forEach( o => {
+            const isMatch = Object.entries(o.acf).every(b => formContent[b] === o[b])
+            console.log(isMatch);
+        })
+        // const filteredHouses = houses.filter((el, i )=>
+        //     {
+        //         const {acf} = el
+                
+                // console.log(isMatch);
+            // return el.acf.piece >= formContent.piece &&
+            //     el.acf.type == formContent.type
+        // })
+        // console.log(filteredHouses);
+    }
+
     return (
         <>
         <Filters toogle={filter}/>
@@ -64,28 +88,29 @@ export default function CoolForm ({hide, hideStatus}) {
             <h1>Trouver le bien qui me correspond</h1>
             <p>
                 Je suis a la recherche d'un{"(e)"} {" "}
-                <select>
+                <select onChange={e => onChange("type", e.target.value)}>
                 <option></option>
                 <option>Appartement</option>
                 <option>Maison</option>
                 <option>Terrain</option>
+                <option>Autre</option>
                 </select> 
-                {" "}d'une superficie miniumum de <input type="number" min="0"/>m² ,
+                {" "}d'une superficie miniumum de <input onChange={e => onChange("habitable", e.target.value)} type="number" min="0"/>m² ,
             </p>
             <p>
-                Ma futur propriété possèdera <input type="number" min="0"/> pièce{"(s)"} minimum, avec si possible <input type="number" min="0"/> chambre{"(s)"},
+                Ma futur propriété possèdera <input onChange={e => onChange("piece", e.target.value)} type="number" min="0"/> pièce{"(s)"} minimum, avec si possible <input type="number" min="0"/> chambre{"(s)"},
             </p>
             <p>
                 J'aimerais pourvoir trouver cette futur acquisition vers 
-                <select>
+                <select onChange={e => onChange("ville", e.target.value)}>
                     <option></option>
                     <option>Le Mans</option>
                     <option>Changer</option>
                     <option>La Chapelle St Haubin</option>
                 </select>
-                , pour un budget minimum de <input type="number" min="0"/>€
+                , pour un budget maximum de <input onChange={e => onChange("prix", e.target.value)} type="number" min="0"/>€
             </p>
-            <button onClick={onSubmit}>Soumettre</button>
+            <button onClick={() => Submit()}>Soumettre</button>
         </div>
         </>
     )
