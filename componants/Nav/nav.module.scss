@@ -46,3 +46,10 @@
         top: 50%;
     }
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles pour cette Media Queries */
+    .wrapper {
+        // display: none;
+    }
+    }
