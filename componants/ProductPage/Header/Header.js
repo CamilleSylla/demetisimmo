@@ -8,30 +8,30 @@ export default function Header({ product }) {
         <img src="/icon/blue/location.svg" />
         <p>{product.acf.ville}, {product.acf.cp}</p>
       </div>
-      {/* <div className={style.informations}>
+      <div className={style.informations}>
         <div className={style.icon_wrapper}>
           <img src="/icon/blue/bed.svg" />
           <p>
-            {product.chambres} chambre{product.chambres > 1 ? "s" : null}
+            {product.acf.chambre} chambre{product.acf.chambre > 1 ? "s" : null}
           </p>
         </div>
         <div className={style.icon_wrapper}>
           <img src="/icon/blue/area.svg" />
-          <p>{product.surface}m²</p>
+          <p>{product.acf.habitable}m²</p>
         </div>
         <div className={style.icon_wrapper}>
           <img src="/icon/blue/piece.svg" />
           <p>
-            {product.piece} piece{product.piece > 1 ? "s" : null}
+            {product.acf.piece} piece{product.acf.piece > 1 ? "s" : null}
           </p>
         </div>
         <div className={style.icon_wrapper}>
           <img src="/icon/blue/garage.svg" />
           <p>
-            {product.garage} garage{product.garage > 1 ? "s" : null}
+            {product.acf.garage ? product.acf.garage : 0} garage{product.acf.garage > 1 ? "s" : null}
           </p>
         </div>
-      </div> */}
+      </div>
       <div className={style.price}>
           <p>{product.acf.prix.toLocaleString()}€</p>
           <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.acf.ref}</p>

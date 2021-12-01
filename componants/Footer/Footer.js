@@ -29,6 +29,10 @@ export default function Footer() {
         name: "Demetis Conseil",
         url: "https://www.demetisconseil.fr",
       },
+      {
+        name: "Nos travaux",
+        url: "https://nos-travaux.fr/",
+      },
   ]
   const Confidentialité = [
       {

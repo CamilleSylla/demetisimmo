@@ -103,9 +103,6 @@ export default function Circle() {
     <section ref={animation_start} className={style.wrapper}>
       <img ref={animation_arrow} className={style.spinning} src="/icon/blue/recycle.svg" />
       <div ref={animation_360} className={style.acc360}>
-        <p>
-          Accompagnement à
-        </p>
         <img src="/icon/blue/360.svg"/>
       </div>
       {/*around circle*/}

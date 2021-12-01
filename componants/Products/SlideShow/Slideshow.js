@@ -1,5 +1,6 @@
 import Cards from '../Cards/Cards'
 import style from './slideshow.module.scss'
+import Link from 'next/link'
 
 export default function Slideshow ({houses}) {
 
@@ -17,7 +18,9 @@ export default function Slideshow ({houses}) {
                     })}
                 </div>
             </div>
+            <Link href="/proprietes">
                 <button>consulter tous nos biens</button>
+                </Link>
         </section>
     )
 }

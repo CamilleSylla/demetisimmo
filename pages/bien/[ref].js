@@ -1,22 +1,22 @@
-import house from '../Json/House.json'
-import Spacing from "../componants/Spacing/spacing";
-import Header from '../componants/ProductPage/Header/Header';
-import Gallery from '../componants/ProductPage/Gallery/Gallery';
-import Description from '../componants/ProductPage/Informations/Description/Description';
-import EnWrap from '../componants/ProductPage/Energie/EnWrap';
-import Calculate from '../componants/ProductPage/Calculate/Calculate';
-import Displayer from '../componants/ProductPage/ImageDisplayer/Displayer';
+import house from '../../Json/House.json'
+import Spacing from "../../componants/Spacing/spacing";
+import Header from '../../componants/ProductPage/Header/Header';
+import Gallery from '../../componants/ProductPage/Gallery/Gallery';
+import Description from '../../componants/ProductPage/Informations/Description/Description';
+import EnWrap from '../../componants/ProductPage/Energie/EnWrap';
+import Calculate from '../../componants/ProductPage/Calculate/Calculate';
+import Displayer from '../../componants/ProductPage/ImageDisplayer/Displayer';
 import { useState } from 'react';
 import axios from 'axios';
 
 export default function Product ({product}) {
+    console.log(product);
     const [gallery, setGallery] = useState({
-        all: product.acf_photo_gallery,
-        target: product.acf_photo_gallery[0],
+        all: product.acf.gallery,
+        target: product.acf.gallery[0],
         active: false
     })
     const {gaz, ener, prix} = product.acf
-
 
     return (
         <div style={{position: "relative"}}>

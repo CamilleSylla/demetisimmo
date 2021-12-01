@@ -7,7 +7,7 @@ import axios from 'axios';
 export default function Cards ({data}) {
 
     const [ agent, setAgent] = useState(false)
-    console.log(data);
+    console.log("Houses => ",data);
 
     const disponible = {
         background : "#1c3661",
@@ -41,26 +41,26 @@ export default function Cards ({data}) {
 
 
     return (
-        <Link href={`/${data.id}`}>
+        <Link href={`/bien/${data.id}`}>
         <article className={style.wrapper}>
                 <Agent/>
             <img className={style.main_img} src={data.acf.main_img}/>
             <span className={style.price}>{data.acf.prix.toLocaleString()}€</span>
             <h1>{data.title.rendered}.</h1>
             <div className={style.infos_icon}>
-            {/* <div className={style.icon_wrapper}>
+            <div className={style.icon_wrapper}>
                     <img src="/icon/blue/area.svg"/>
-                    <p>{data.surface}m²</p>
+                    <p>{data.acf.habitable}m²</p>
                 </div>
                 <div className={style.icon_wrapper}>
                     <img src="/icon/blue/piece.svg"/>
-                    <p>{data.piece} pcs</p>
+                    <p>{data.acf.piece} pcs</p>
 
                 </div>
                 <div className={style.icon_wrapper}>
                     <img src="/icon/blue/bed.svg"/>
-                    <p>{data.chambres} chr{data.chambres > 1 ? "s" : null}</p>
-                </div> */}
+                    <p>{data.acf.chambre} chr{data.chambres > 1 ? "s" : null}</p>
+                </div>
                 <Disponibilite/>
             </div>
         </article>
