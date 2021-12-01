@@ -3,8 +3,8 @@ import Search from "../Search/Search";
 
 export default function Banner() {
   const content = {
-    h1: "Vos projets immobilier simplement et rapidement",
-    p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque tellus orci, quis laoreet augue aliquet sed..",
+    h1: "Un projet, plusieurs pôles, un seul interlocuteur",
+    p: "Vous souhaitez vendre ou acheter un bien, nous proposons à nos clients un accompagnement de A à Z.",
   };
 
   return (

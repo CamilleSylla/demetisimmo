@@ -6,12 +6,12 @@
         width: 40%;
         left: 5%;
         div {
-            text-align: right;
+            // text-align: right;
             position: absolute;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: flex-end;
+            // align-items: flex-end;
             top: 50%;
             transform: translate3d(0, -50%, 0);
             height: 40%;
@@ -24,10 +24,14 @@
             }
             p {
                 width: 100%;
+                padding: 1vh 0 1vh 0;
             }
             button {
                 align-self: flex-end;
             
+            }
+            ul {
+                list-style: inside;
             }
         }
        

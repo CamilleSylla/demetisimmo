@@ -77,16 +77,16 @@ export default function About() {
         <div>
           <span>A propos</span>
           <h1>
-            Nous fournissons les <span>meilleurs biens</span> immobiliers !
+            Une <span>interprofessionnalité</span> au service de nos clients.
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
-            amet nisi vestibulum, efficitur urna in, volutpat libero. In justo
-            lorem, sagittis et ex lobortis, gravida molestie lorem.
+          Demetis immo est le résultat d’une fusion entre un cabinet de gestion de patrimoine, un courtier en financement et une entreprise généraliste du bâtiment.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
-            amet nisi vestibulum, efficitur urna in, volutpat libero.
+          Lors de l’achat d’un bien immobilier, plusieurs points sont primordiaux, le montage de votre dossier de financement, l’expertise immobilière et celle des travaux, ou même la fiscalité si c’est un investissement locatif.
+          </p>
+          <p>
+          Grace à nos différents pôles, vous bénéficierez d’un accompagnement complet et précis sans démultiplier vos interlocuteurs.
           </p>
           <div className={style.action}>
             <button>Nos services</button>

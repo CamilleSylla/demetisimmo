@@ -7,17 +7,14 @@ export default function Vendre() {
       <div className={style.content}>
         <span>Vendre</span>
         <h1>
-          Vous <span>accompagnez</span> dans la <span>vente</span> de votre bien
+          Vous <span>accompagnez</span> dans la <span>vente</span> de votre bien.
         </h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
-            amet nisi vestibulum, efficitur urna in, volutpat libero. In justo
-            lorem, sagittis et ex lobortis, gravida molestie lorem.
+        Vous souhaitez vendre votre bien, nos solutions sont sur mesure, notre priorité est de s’adapter à vos besoins. 
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit
-            amet nisi vestibulum, efficitur urna in, volutpat libero.
-          </p>
+          Bénéficiez d’une expertise gratuite, nous vous offrons les Diagnostiques lorsque vous nous choisissez en tant qu’interlocuteur unique.
+            </p>
         <button>Vendre mon bien</button>
       </div>
       <Illustrate/>
