@@ -47,9 +47,8 @@
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles pour cette Media Queries */
+@media screen and (max-width: 600px) {
     .wrapper {
-        // display: none;
+        display: none;
     }
-    }
+  }

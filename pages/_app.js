@@ -5,13 +5,11 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="app">
     <TeamProvider>
     <Nav/>
     <Component {...pageProps} />
     <Footer/>
     </TeamProvider>
-    </div>
   )
 }
 
