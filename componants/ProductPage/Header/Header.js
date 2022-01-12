@@ -3,6 +3,10 @@ import style from "./header.module.scss";
 export default function Header({ product }) {
   return (
     <section className={style.wrapper}>
+      <div className={style.price}>
+          <p>{product.acf.prix.toLocaleString()}€</p>
+          <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.acf.ref}</p>
+      </div>
       <h1>{product.title.rendered}</h1>
       <div className={style.adresse}>
         <img src="/icon/blue/location.svg" />
@@ -32,10 +36,7 @@ export default function Header({ product }) {
           </p>
         </div>
       </div>
-      <div className={style.price}>
-          <p>{product.acf.prix.toLocaleString()}€</p>
-          <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.acf.ref}</p>
-      </div>
+      
     </section>
   );
 }

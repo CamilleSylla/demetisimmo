@@ -19,7 +19,7 @@ export default function Product ({product}) {
     const {gaz, ener, prix} = product.acf
 
     return (
-        <div style={{position: "relative"}}>
+        <div style={{position: "relative", width: "100vw"}}>
             <Displayer product={product} gallery={gallery} setImgUrl={setGallery}/>
             <Spacing value='20vh'/>
             <Header product={product}/>

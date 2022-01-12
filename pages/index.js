@@ -10,7 +10,7 @@ import Vendre from '../componants/Vendre/Home/Vendre'
 import axios from 'axios'
 export default function Home({house}) {
   return (
-    <div>
+    <>
       <Banner/>
       <About/>
       <Slideshow houses={house}/>
@@ -18,11 +18,12 @@ export default function Home({house}) {
       <WhyUs/>
       <Avis avis={avis}/>
       <Team limit={3} team={team}/>
-    </div>
+    </>
   )
 }
 
 export async function getServerSideProps () {
+  // https://api.demetisconseil.fr/wp-json/wp/v2/biens
 
   const house = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data)

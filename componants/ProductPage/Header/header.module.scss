@@ -57,3 +57,14 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        .price {
+            position: initial;
+            p {
+                text-align: left;
+            }
+        }
+    }
+  }

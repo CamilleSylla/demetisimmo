@@ -9,3 +9,9 @@
             border-bottom: 5px solid #1c3661;
             }
 }
+@media screen and (max-width: 600px) {
+    .wrapper {
+        height: auto;
+        flex-direction: column;
+  }
+}

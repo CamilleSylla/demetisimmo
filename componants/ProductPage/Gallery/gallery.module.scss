@@ -58,3 +58,16 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        height: auto;
+        .main_img {
+            width: 100%;
+            height: 30vh;
+        }
+        .other_img {
+            display: none;
+        }
+    }
+  }
