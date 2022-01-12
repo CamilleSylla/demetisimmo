@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import style from "./about.module.scss";
 import gsap from "gsap";
+import Layout from "../Layout/Layout";
 
 export default function About() {
   const Start = useRef();
@@ -11,7 +12,11 @@ export default function About() {
 
   useEffect(() => {
     // Illustration //
-    gsap
+
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
+
+    if (!isMobile) {
+      gsap
       .timeline({
         scrollTrigger: {
           trigger: Start.current,
@@ -54,46 +59,57 @@ export default function About() {
         start: "top+=20% bottom",
       },
     });
+    }
+    
   }, []);
 
   return (
-    <section ref={Start} className={style.wrapper}>
-      <div className={style.img_wrapper}>
-        <div ref={fill} className={style.background} />
-        <div
-          ref={stroke}
-          className={style.background}
-          style={{
-            background: "transparent",
-            border: "2px solid #1c3661",
-            left: "5vw",
-            top: "45%",
-            borderBottomLeftRadius: "80px",
-          }}
-        />
-        <img ref={img} src="/img/banner2.jpg" />
-      </div>
-      <article ref={content} className={style.content}>
-        <div>
-          <span>A propos</span>
-          <h1>
-            Une <span>interprofessionnalité</span> au service de nos clients.
-          </h1>
-          <p>
-          Demetis immo est le résultat d’une fusion entre un cabinet de gestion de patrimoine, un courtier en financement et une entreprise généraliste du bâtiment.
-          </p>
-          <p>
-          Lors de l’achat d’un bien immobilier, plusieurs points sont primordiaux, le montage de votre dossier de financement, l’expertise immobilière et celle des travaux, ou même la fiscalité si c’est un investissement locatif.
-          </p>
-          <p>
-          Grace à nos différents pôles, vous bénéficierez d’un accompagnement complet et précis sans démultiplier vos interlocuteurs.
-          </p>
-          <div className={style.action}>
-            <button>Nos services</button>
-            <button>Notre équipe</button>
-          </div>
+    <Layout>
+      <div ref={Start} >
+        <div className={style.img_wrapper}>
+          <div ref={fill} className={style.background} />
+          <div
+            ref={stroke}
+            className={style.background}
+            style={{
+              background: "transparent",
+              border: "2px solid #1c3661",
+              left: "5vw",
+              top: "45%",
+              borderBottomLeftRadius: "80px",
+            }}
+          />
+          <img ref={img} src="/img/banner2.jpg" />
         </div>
-      </article>
-    </section>
+        <article ref={content} className={style.content}>
+          <div>
+            <span>A propos</span>
+            <h1>
+              Une <span>interprofessionnalité</span> au service de nos clients.
+            </h1>
+            <p>
+              Demetis immo est le résultat d’une fusion entre un cabinet de
+              gestion de patrimoine, un courtier en financement et une
+              entreprise généraliste du bâtiment.
+            </p>
+            <p>
+              Lors de l’achat d’un bien immobilier, plusieurs points sont
+              primordiaux, le montage de votre dossier de financement,
+              l’expertise immobilière et celle des travaux, ou même la fiscalité
+              si c’est un investissement locatif.
+            </p>
+            <p>
+              Grace à nos différents pôles, vous bénéficierez d’un
+              accompagnement complet et précis sans démultiplier vos
+              interlocuteurs.
+            </p>
+            <div className={style.action}>
+              <button>Nos services</button>
+              <button>Notre équipe</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </Layout>
   );
 }

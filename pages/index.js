@@ -14,10 +14,10 @@ export default function Home({house}) {
       <Banner/>
       <About/>
       <Slideshow houses={house}/>
-      <Vendre/>
-      <WhyUs/>
-      <Avis avis={avis}/>
-      <Team limit={3} team={team}/>
+      {/* <Vendre/> */}
+      {/* <WhyUs/> */}
+      {/* <Avis avis={avis}/> */}
+      {/* <Team limit={3} team={team}/> */}
     </>
   )
 }

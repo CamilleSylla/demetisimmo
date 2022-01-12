@@ -1,5 +1,6 @@
 import style from "./banner.module.scss";
 import Search from "../Search/Search";
+import Layout from "../Layout/Layout";
 
 export default function Banner() {
   const content = {
@@ -8,17 +9,17 @@ export default function Banner() {
   };
 
   return (
-    <section className={style.wrapper}>
-      <img src="/img/banner5.jpg" />
+    <Layout>
+      <img className={style.img} src="/img/banner5.jpg" />
       <div className={style.title}>
         <h1>{content.h1}</h1>
         <p>{content.p}</p>
         <button>En savoir plus</button>
       </div>
-      <span><p>Trouver mon futur investissement</p></span>
+      <span className={style.label}><p>Trouver mon futur investissement</p></span>
       <div className={style.search}>
         <Search button="Rechercher"/>
       </div>
-    </section>
+    </Layout>
   );
 }

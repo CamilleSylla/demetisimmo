@@ -1,5 +1,4 @@
-.wrapper {
-    position: relative;
+
     .content {
         width: 80%;
         position: absolute;
@@ -37,10 +36,37 @@
         transform-style: preserve-3d;
     perspective: 100px;
     }
-    button {
+    .clic {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate3d(-50%, 0, 0);
     }
-}
+
+
+@media screen and (max-width: 600px) {
+.content {
+    position: initial;
+    transform: translate3d(0, 0, 0);
+    margin: 0 auto;
+    text-align: center;
+    span {
+        margin: 0 auto;
+    }
+    .main {
+        text-align: center;
+        width: 100%;
+    }
+    }
+    .slideshow {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 5vh;
+    }
+    .clic {
+        position: initial;
+        transform: translate3d(0,0,0);
+        margin: 0 auto;
+        margin: 5vh 0 2vh 0;
+    }
+  }
