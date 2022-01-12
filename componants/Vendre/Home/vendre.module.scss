@@ -1,7 +1,4 @@
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+
     .content {
         position: absolute;
         right: 0;
@@ -24,8 +21,29 @@
             padding-top: 2vh;
         }
         button {
-            margin-top: 10vh;            font-weight: 900;
+            margin-top: 10vh;            
+            font-weight: 900;
         }
     }
     
-}
+    
+    @media screen and (max-width: 600px) {
+        .content {
+            padding: 10vh 0 10vh 0;
+            position: initial;
+            transform: translate3d(0, 0,0);
+            width: 100%;
+            h1 {
+                width: 90%;
+                margin: 0 auto;
+            }
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+            button {
+                margin-top: 5vh;            
+                font-weight: 900;
+            }
+        }
+    }

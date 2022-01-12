@@ -1,9 +1,11 @@
+import Layout from "../../Layout/Layout";
 import Illustrate from "./Illustrate/Illustrate";
 import style from "./vendre.module.scss";
 
 export default function Vendre() {
   return (
-    <section className={style.wrapper}>
+    <Layout>
+      <Illustrate/>
       <div className={style.content}>
         <span>Vendre</span>
         <h1>
@@ -17,7 +19,6 @@ export default function Vendre() {
             </p>
         <button>Vendre mon bien</button>
       </div>
-      <Illustrate/>
-    </section>
+    </Layout>
   );
 }

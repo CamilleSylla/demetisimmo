@@ -1,10 +1,11 @@
+import Layout from "../Layout/Layout";
 import Circle from "./Circle/Circle";
 import style from "./whyus.module.scss";
 
 export default function WhyUs() {
 
   return (
-    <section className={style.wrapper}>
+    <Layout>
       <article className={style.content}>
         <div>
             <span>Nos Services</span>
@@ -26,6 +27,6 @@ export default function WhyUs() {
         </div>
       </article>
         <Circle />
-    </section>
+    </Layout>
   );
 }

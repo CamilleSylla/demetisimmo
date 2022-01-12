@@ -1,5 +1,3 @@
-.wrapper {
-    position: relative;
     .content {
         position: absolute;
         height: 100%;
@@ -59,5 +57,24 @@
             height: 100%;
             width: 40%;
         }
-    }
 }
+
+@media screen and (max-width: 600px) {
+    .content {
+        position: initial;
+        height: auto;
+        width: 100%;
+        padding: 5vh 0 5vh 0;
+        div {
+            position: initial;
+            transform: translate3d(0, 0, 0);
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .card {
+        display: none;
+    }
+  }
