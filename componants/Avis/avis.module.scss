@@ -1,5 +1,4 @@
-.wrapper {
-  position: relative;
+
   .content_wrapper {
     width: 40%;
     height: 100%;
@@ -113,5 +112,19 @@
       position: absolute; 
       height: 100%; 
     }
+  }
+
+@media screen and (max-width: 600px) {
+  .content_wrapper {
+    position: initial;
+    width: 100%;
+    padding: 5vh 0 5vh 0;
+    .content {
+      position: initial;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .illustration {
+    display: none;
   }
 }

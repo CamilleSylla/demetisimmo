@@ -1,3 +1,4 @@
+import Layout from "../Layout/Layout";
 import style from "./avis.module.scss";
 
 export default function Avis({avis}) {
@@ -21,7 +22,7 @@ export default function Avis({avis}) {
         )
     }
   return (
-    <section className={style.wrapper}>
+    <Layout>
       <div className={style.content_wrapper}>
         <div className={style.content}>
           <span>Votre satisfaction</span>
@@ -43,6 +44,6 @@ export default function Avis({avis}) {
           <img className={style.circle} src="/illustrations/circle.svg"/>
           <img className={style.client} src="/img/client.png"/>
       </div>
-    </section>
+    </Layout>
   );
 }

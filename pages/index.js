@@ -16,8 +16,8 @@ export default function Home({house}) {
       <Slideshow houses={house}/>
       <Vendre/>
       <WhyUs/>
-      {/* <Avis avis={avis}/> */}
-      {/* <Team limit={3} team={team}/> */}
+      <Avis avis={avis}/>
+      <Team limit={3} team={team}/>
     </>
   )
 }
