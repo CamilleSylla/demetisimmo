@@ -1,11 +1,5 @@
-.wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.container {
     height: 10vh;
-    z-index: 200;
-    background: transparent;
     .background {
         position: absolute;
         width: 100%;
@@ -47,8 +41,10 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .wrapper {
+
+@media screen and (max-width: 990px) {
+    .container {
         display: none;
     }
-  }
+
+}

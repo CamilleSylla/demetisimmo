@@ -3,29 +3,13 @@ import style from './nav.module.scss'
 import gsap from 'gsap'
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Link from 'next/link'
+import NavLinks from './NavLinks/NavLinks';
 
-export default function Nav () {
+export default function Navigation () {
 
     const NavRef = useRef()
     const Logo = useRef()
-    const Menu = [
-        {
-            name: "Accueil",
-            url: ""
-        },
-        {
-            name: "Vendre",
-            url: "vendre"
-        },
-        {
-            name: "Propriétés",
-            url: "proprietes"
-        },
-        {
-            name: "Notre Équipe",
-            url: "equipe"
-        },
-    ]
+    
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -50,25 +34,16 @@ export default function Nav () {
     }, [])
 
     return (
-        <nav  className={style.wrapper}>
+        <div className={style.container}>
             <div ref={NavRef} className={style.background}/>
             <Link href="/">
 
             <img style={{cursor: "pointer"}} ref={Logo} src="/Logo/Logo.svg" />
             </Link>
-            <ul>
-                {Menu.map((el, i) => {
-
-                    return (
-                        <Link href={`/${el.url}`}>
-                            <li key={i}> {el.name} </li>
-                        </Link>
-                    )
-                })}
-            </ul>
+            <NavLinks/>
             <Link href="/contact">
             <button>Contact</button>
             </Link>
-        </nav>
+        </div>
     )
 }

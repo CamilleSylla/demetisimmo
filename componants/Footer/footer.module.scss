@@ -50,3 +50,29 @@
         
     }
 }
+@media screen and (max-width: 900px) {
+    .wrapper {
+        height: auto;
+        .content {
+            display: block;
+            div {
+                margin: 0 auto;
+                width: 80%;
+                img {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+                p {
+                    font-size: 2rem;
+                }
+                ul {
+                    padding: 2.5vh 0 2.5vh 0;
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
