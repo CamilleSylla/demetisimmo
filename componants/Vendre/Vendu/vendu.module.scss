@@ -32,7 +32,28 @@ bottom: 0;
             padding-top: 2vh;
         }
         button {
-            margin-top: 10vh;            font-weight: 900;
+            margin-top: 10vh;            
+            font-weight: 900;
         }
     }
+}
+@media screen and (max-width: 990px) {
+    .wrapper {
+        height: auto;
+        .illustration {
+            display: none;
+        }
+        .content {
+            position: initial;
+            transform: translate3d(0,0,0);
+            height: auto;
+            padding: 5vh 0 5vh 0;
+            width: 90%;
+            margin: 0 auto;
+            button {
+                margin-top: 5vh;
+            }
+        }
+    }
+
 }

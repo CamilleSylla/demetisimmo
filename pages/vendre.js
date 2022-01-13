@@ -12,7 +12,7 @@ export default function Vendre ({houses}) {
             <Spacing value="10vh" />
             <Header
         pageTitle="Vendre mon bien avec Demetis Immo"
-        desc="Vous souhaitez vendre votre bien ? Nous somme la pour vous accompagner !"
+        desc="Vous souhaitez vendre votre bien ? Nous sommes la pour vous accompagner !"
         />
             <Spacing value="10vh" />
         <Accompagnement/>
