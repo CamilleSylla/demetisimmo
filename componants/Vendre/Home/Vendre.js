@@ -1,6 +1,7 @@
 import Layout from "../../Layout/Layout";
 import Illustrate from "./Illustrate/Illustrate";
 import style from "./vendre.module.scss";
+import Link from 'next/link'
 
 export default function Vendre() {
   return (
@@ -17,7 +18,9 @@ export default function Vendre() {
           <p>
           Bénéficiez d’une expertise gratuite, nous vous offrons les Diagnostiques lorsque vous nous choisissez en tant qu’interlocuteur unique.
             </p>
+            <Link href="/vendre">
         <button>Vendre mon bien</button>
+            </Link>
       </div>
     </Layout>
   );

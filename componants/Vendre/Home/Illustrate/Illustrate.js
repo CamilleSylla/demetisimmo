@@ -52,7 +52,6 @@ import style from './illustrate.module.scss'
     return (
         <div className={style.wrapper}>
             {illustration.map((el, i) => {
-                console.log(el.styling);
                 return (
                     <div style={el.styling} className={style.square}>
                         <img src={el.url}/>

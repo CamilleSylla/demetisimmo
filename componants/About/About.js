@@ -13,6 +13,9 @@ export default function About() {
 
   useEffect(() => {
      
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
+
+    if (!isMobile) {
       gsap
       .timeline({
         scrollTrigger: {
@@ -20,7 +23,6 @@ export default function About() {
           start: "top bottom",
           end: "top+=90% bottom",
           scrub: 1,
-          markers: true
         },
       })
       .from(
@@ -57,13 +59,13 @@ export default function About() {
         start: "top+=20% bottom",
       },
     });
-    
+    }
     
   }, []);
 
   return (
     <Layout>
-      <div ref={Start} >
+      <div ref={Start} style={{width: "100%", height: "100vh"}}>
         <div className={style.img_wrapper}>
           <div ref={fill} className={style.background} />
           <div
@@ -102,8 +104,8 @@ export default function About() {
               interlocuteurs.
             </p>
             <div className={style.action}>
-              <Link href="/equipe">
-              <button>Notre équipe</button>
+              <Link href="/contact">
+              <button>Contact</button>
               </Link>
             </div>
           </div>
