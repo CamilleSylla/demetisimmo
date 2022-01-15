@@ -1,5 +1,6 @@
 import Cards from '../Cards/Cards'
 import style from './team.module.scss'
+import Link from 'next/link'
 
 export default function Team ({limit, team}) {
 
@@ -19,7 +20,9 @@ export default function Team ({limit, team}) {
                 })}
 
             </div>
+            <Link href="/equipe">
             <button>Consulter toute l'équipe</button>
+            </Link>
         </section>
     )
 }

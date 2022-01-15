@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import style from "./about.module.scss";
 import gsap from "gsap";
 import Layout from "../Layout/Layout";
+import Link from 'next/link'
 
 export default function About() {
   const Start = useRef();
@@ -11,11 +12,7 @@ export default function About() {
   const content = useRef();
 
   useEffect(() => {
-    // Illustration //
-
-    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
-
-    if (!isMobile) {
+     
       gsap
       .timeline({
         scrollTrigger: {
@@ -23,6 +20,7 @@ export default function About() {
           start: "top bottom",
           end: "top+=90% bottom",
           scrub: 1,
+          markers: true
         },
       })
       .from(
@@ -59,7 +57,7 @@ export default function About() {
         start: "top+=20% bottom",
       },
     });
-    }
+    
     
   }, []);
 
@@ -104,8 +102,9 @@ export default function About() {
               interlocuteurs.
             </p>
             <div className={style.action}>
-              <button>Nos services</button>
+              <Link href="/equipe">
               <button>Notre équipe</button>
+              </Link>
             </div>
           </div>
         </article>

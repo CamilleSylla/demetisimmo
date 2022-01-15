@@ -1,31 +1,28 @@
 import style from './card.module.scss'
+import Link from 'next/link'
 
 export default function Cards ({agent}) {
 
-    const SocialData = ["/icon/blue/social/facebook.svg","/icon/blue/social/twitter.svg","/icon/blue/social/linkedin.svg"]
-
-    const Social = () => {
-
+    const Social = ({url}) => {
         return (
             <div className={style.social}>
-                {SocialData.map((el, i) => {
-                    
-                    return <img src={el} key={i}/>
-                })}
+                     <img onClick={() => window.open(url)} src="/icon/blue/social/linkedin.svg" />
             </div>
         )
     }
 
     return (
+        <Link href="/equipe">
         <article className={style.wrapper}>
             <div className={style.border}>
-                <Social/>
+                <Social url={agent.acf.lkd}/>
                 </div>
-                <img className={style.profile_img} src={agent.main_img}/>
+                <img className={style.profile_img} src={agent.acf.vignette}/>
                 <div className={style.id}>
-                    <h1>{agent.prenom} {agent.nom}</h1>
-                    <p>{agent.poste}</p>
+                    <h1>{agent.title.rendered}</h1>
+                    <p>{agent.acf.poste}</p>
                 </div>
         </article>
+        </Link>
     )
 }

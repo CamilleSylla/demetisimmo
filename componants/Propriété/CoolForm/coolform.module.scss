@@ -105,3 +105,16 @@
     }
     
 }
+
+@media screen and (max-width: 990px) {
+    .actions {
+        .wrap {
+            .hide{
+                display: none;
+            }
+            .form, .filters {
+                margin: 0 auto;
+            }
+        }
+    }
+}

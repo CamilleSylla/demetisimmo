@@ -8,7 +8,7 @@ import Team from '../componants/Team/Home/Team'
 import WhyUs from '../componants/WhyUS/WhyUs'
 import Vendre from '../componants/Vendre/Home/Vendre'
 import axios from 'axios'
-export default function Home({house}) {
+export default function Home({house, agent}) {
   return (
     <>
       <Banner/>
@@ -17,7 +17,7 @@ export default function Home({house}) {
       <Vendre/>
       <WhyUs/>
       <Avis avis={avis}/>
-      <Team limit={3} team={team}/>
+      <Team limit={3} team={agent}/>
     </>
   )
 }
@@ -27,9 +27,14 @@ export async function getServerSideProps () {
 
   const house = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data)
+
+  const agent =  await axios.get(`${process.env.NEXT_PUBLIC_API}/agent`)
+  .then(res => res.data)
+  
   return {
     props: {
-      house
+      house,
+      agent
     }
   }
 }

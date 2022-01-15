@@ -69,14 +69,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
   .img_wrapper {
     position: initial;
     height: auto;
     width: 100%;
     .background {
-      height: 30vh;
-      width: 40vw;
       display: none;
     }
     img {

@@ -5,19 +5,19 @@ export default function Fonctionnement () {
     const cardData = [
         {
             title: "Estimation et Optimisation",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
+            desc: "Nos experts sauront mesurer la valeur actuelle de votre bien et comment en tirer le meilleur.",
             icon: "/icon/blue/loupe.svg",
             color: ""
         },
         {
             title: "Diffusion et Visite",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
+            desc: "Demetis Immo mettra tes ses outils en actions pour promouvoir votre bien.",
             icon: "/icon/blue/door_open.svg",
             color: ""
         },
         {
             title: "Suivi et Accompagnement",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada gravida rutrum.",
+            desc: "Un conseiller dedier vous sera attitré afin de suivre votre dossier.",
             icon: "/icon/blue/group.svg",
             color: ""
         },

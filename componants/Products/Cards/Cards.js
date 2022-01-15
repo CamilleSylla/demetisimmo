@@ -7,7 +7,6 @@ import axios from 'axios';
 export default function Cards ({data}) {
 
     const [ agent, setAgent] = useState(false)
-    console.log("Houses => ",data);
 
     const disponible = {
         background : "#1c3661",
