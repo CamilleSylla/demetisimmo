@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import style from '../NavBar/navbar.module.scss'
 
 const Menu = [
     {
@@ -31,6 +33,9 @@ export default function NavLinks ({close}) {
                         </Link>
                     )
                 })}
+                <Link href="/contact">
+                            <li className={style.contact} onClick={() => close(false)} > contact </li>
+                        </Link>
             </ul>
     )
 }

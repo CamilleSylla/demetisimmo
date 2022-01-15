@@ -51,3 +51,15 @@
         margin-top: 5vh;
     }
 }
+@media screen and (max-width: 990px) {
+    .wrapper {
+        position: initial;
+        transform: translate3d(0,0,0);
+        width: 90%;
+        margin: 0 auto;
+        background: transparent;
+        input, textarea, select {
+            border: 2px solid #1c3661;
+        }
+    }
+}

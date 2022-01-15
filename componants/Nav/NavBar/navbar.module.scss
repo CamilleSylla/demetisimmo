@@ -5,3 +5,8 @@
     width: 100%;
     z-index: 200;
 }
+@media screen and (min-width: 990px) {
+    .contact {
+        display: none;
+    }
+}
