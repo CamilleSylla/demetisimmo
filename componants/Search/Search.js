@@ -1,6 +1,14 @@
 import style from './search.module.scss'
+import Link from 'next/link'
 
 export default function Search ({button}) {
+
+
+    const testSearchObject = {
+        city : "Le Mans",
+        chambre: 2
+    }
+
 
     return (
         <div className={style.wrapper}>
@@ -36,7 +44,9 @@ export default function Search ({button}) {
 
             </div>
             <div>
+                <Link href={{ pathname: '/proprietes/', query: {filter : JSON.stringify(testSearchObject)} }}>
                 <button>{button}</button>
+                </Link>
             </div>
 
         </div>

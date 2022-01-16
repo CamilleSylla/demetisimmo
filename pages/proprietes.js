@@ -42,7 +42,12 @@ export default function Proprietes({houses}) {
   );
 }
 
-export async function getServerSideProps ( ) {
+export async function getServerSideProps (props) {
+  if (props.query.filter !== undefined) {
+    console.log(props.query.filter);
+  } else {
+    console.log("rien")
+  }
   const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data.filter(el => el.acf.dispo === "Vrai"))
   return {
