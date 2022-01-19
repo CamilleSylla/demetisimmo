@@ -44,15 +44,27 @@ export default function Proprietes({houses}) {
 
 export async function getServerSideProps (props) {
   if (props.query.filter !== undefined) {
-    console.log(props.query.filter);
+    const userFilter = JSON.parse(props.query.filter)
+    const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
+    .then(res => res.data.filter(el => el.acf.dispo === "Vrai"))
+    .then(biens => biens.filter(bien => {
+      console.log(bien);
+      return Object.keys(userFilter).every(searchKey => {
+          return bien.acf[searchKey] == userFilter[searchKey]
+      })
+    }))
+    return {
+      props: {
+        houses
+      }
+    }
   } else {
-    console.log("rien")
-  }
-  const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
+    const houses = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data.filter(el => el.acf.dispo === "Vrai"))
   return {
     props: {
       houses
     }
+  }
   }
 }
