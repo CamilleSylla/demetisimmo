@@ -41,6 +41,7 @@
         height: auto;
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
+        padding: 5vh 0 5vh 0;
         div {
             p, select, input {
                 margin: 0 auto;
@@ -59,7 +60,6 @@
                 transform: translate3d(0,0,0);
                 margin: 0 auto;
                 margin-top: 2vh ;
-                margin-bottom: 5vh ;
             }
         }
     }
