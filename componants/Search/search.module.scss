@@ -35,3 +35,33 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        div {
+            p, select, input {
+                margin: 0 auto;
+            }
+            p {
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                padding: 2vh 0 2vh 0;
+            }
+            select {
+                height: 5vh;
+            }
+            button {
+                position: unset;
+                transform: translate3d(0,0,0);
+                margin: 0 auto;
+                margin-top: 2vh ;
+                margin-bottom: 5vh ;
+            }
+        }
+    }
+
+}

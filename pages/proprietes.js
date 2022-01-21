@@ -35,7 +35,7 @@ export default function Proprietes({houses}) {
       <CoolForm hideStatus={map} hide={setMap}/>
       <section style={list}>
         <HouseList houses={houses} />
-        {map ? <Map/> : null}
+        {/* {map ? <Map/> : null} */}
           
       </section>
     </div>

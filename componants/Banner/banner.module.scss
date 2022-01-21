@@ -64,7 +64,7 @@
             text-align: center;
             transform: translate3d(0, 0, 0);
             position: initial;
-            padding: 20vh 0 20vh 0;
+            padding: 20vh 0 5vh 0;
             p {
                 text-align: center;
                 width: 80%;
@@ -79,7 +79,11 @@
             display: none;
         }
         .search {
-            display: none;
+            position: initial;
+            transform: translate3d(0,0,0);
+            width: 100%;
+            border-radius: 0;
+            box-shadow: unset;
         }
     
   }
