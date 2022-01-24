@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./calculate.module.scss";
+import Link from "next/link"
 
 export default function Calculate({ prix }) {
   const [data, setData] = useState({
@@ -60,7 +61,9 @@ export default function Calculate({ prix }) {
           </select>
         </div>
       </form>
+      <Link href="/contact">
       <button>Demander une étude</button>
+      </Link>
       <div className={style.result_wrapper}>
         <div className={style.result}>
             <h3>Vos mensualités :</h3>

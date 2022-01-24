@@ -6,11 +6,37 @@ import { useEffect, useState } from 'react'
 export default function Description ({product}) {
 
     const [agent, setAgent] = useState(false)
+    const  [contact, setContact] = useState()
+    const [agentMail, setAgentMail] = useState()
 
     const ID = product.acf.vendeur[0].ID
     const ContactAgent = () => {
+            let formObject = {
+                nom : {
+                    value : "",
+                    isComplete: false
+                },
+                email : {
+                    value : "",
+                    isComplete: false
+                },
+                phone : {
+                    value : "",
+                    isComplete: false
+                },
+                msg : {
+                    value : "",
+                    isComplete: false
+                },
+                rgpd : false
+            }
+            const onChangeForm = (key, value) => {
+                formObject = {...formObject, [key] : {value : value, isComplete : true} }
+                console.log(formObject);
+            }
 
             const {img, mail, poste, name} = agent
+            setAgentMail(mail)
             return (
             
                 <div className={style.form}>
@@ -23,16 +49,17 @@ export default function Description ({product}) {
                     </div>
                     <div className={style.content_wrapper}>
                         <form>
-                            <input type="text" placeholder="Votre nom"/>
-                            <input type="text" placeholder="Adresse e-mail"/>
-                            <input type="text" placeholder="N° de téléphone"/>
-                            <textarea type="text" placeholder="Message"/>
+                            <input type="text" placeholder="Votre nom*" onChange={e => onChangeForm("nom", e.target.value)}/>
+                            <input type="text" placeholder="Adresse e-mail*" onChange={e => onChangeForm("email", e.target.value)}/>
+                            <input type="text" placeholder="N° de téléphone*" onChange={e => onChangeForm("phone", e.target.value)}/>
+                            <textarea type="text" placeholder="Message*" onChange={e => onChangeForm("msg", e.target.value)}/>
                         </form>
                     </div>
                     <div className={style.content_wrapper}>
-                        <input type="checkbox"/>
-                        <span> encochant cette case, j'accepte blablablabla</span>
+                        <input type="checkbox" onChange={() => formObject.rgpd = true}/>
+                        <span> en cochant cette case, j'accepte que mes informations soient conservées afin d'etre recontacter dans une demarche commerciale.</span>
                     </div>
+
                     <div className={style.content_wrapper}>
                         <button>Contacter {name}</button>
                     </div>
