@@ -112,34 +112,6 @@
 
 @media screen and (max-width: 600px) {
     .wrapper {
-        height: auto;
-        form {
-            display: block;
-        }
-        .result_wrapper {
-            position: initial;
-            margin: 0 auto;
-            height: auto;
-            width: auto;
-            height: auto;
-            transform: translate3d(0,0,0);
-            .result {
-                position: unset;
-                width: auto;
-                height: auto;
-                border-radius: unset;
-                padding: 3vh 2vw 3vh 2vw;
-            }
-            .totalPret {
-                position: unset;
-            }
-        }
-        .illustration, .illustration2 {
-            display: none;
-        }
-        button {
-            position: initial;
-            margin: 0 auto;
-        }
+        display: none;
     }
   }
