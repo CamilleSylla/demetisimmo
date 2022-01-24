@@ -11,9 +11,6 @@ export default function Form () {
             <p className={style.title}>Contactez-nous ou l'un de nos agent !</p>
             <input type="text" placeholder="Votre nom et prénom"/>
             <input type="email" placeholder="Votre adresse email"/>
-            <select>
-                <option>Agence</option>
-            </select>
             <input type="text" placeholder={subject}/>
             <textarea placeholder="Votre message"/>
             <div>

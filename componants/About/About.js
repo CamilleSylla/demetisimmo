@@ -45,7 +45,7 @@ export default function About() {
         img.current,
         {
           opacity: 0,
-          yPercent: -100,
+          yPercent: 100,
         },
         "square"
       );
