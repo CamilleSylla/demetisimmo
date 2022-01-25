@@ -25,9 +25,10 @@ import style from './illustrate.module.scss'
                     top: "25%",
                     right: "5%",
                     width: "50vh",
-                    height: "50vh"
+                    height: "50vh",
+                    objectFit: "cover"
                 },
-                url: "https://images.unsplash.com/photo-1616587896595-51352538155b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
+                url: "/img/office.jpeg",
          },
          {
              styling : {

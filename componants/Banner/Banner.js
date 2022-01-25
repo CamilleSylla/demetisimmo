@@ -19,7 +19,7 @@ export default function Banner() {
 
   return (
     <Layout>
-      <img className={style.img} src="/img/banner.webp" />
+      <img className={style.img} src="/img/home.jpeg" />
       
       <div className={style.title}>
       {logo ?  <img className={style.logo} src="/Logo/Logo.svg"/> : null}

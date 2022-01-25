@@ -4,13 +4,14 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 export default function Description ({product}) {
-
+    
     const [agent, setAgent] = useState(false)
     const  [contact, setContact] = useState()
     const [agentMail, setAgentMail] = useState()
-
+    
     const ID = product.acf.vendeur[0].ID
     const ContactAgent = () => {
+        const {img, mail, poste, name} = agent
             let formObject = {
                 nom : {
                     value : "",
@@ -34,9 +35,17 @@ export default function Description ({product}) {
                 formObject = {...formObject, [key] : {value : value, isComplete : true} }
                 console.log(formObject);
             }
-
-            const {img, mail, poste, name} = agent
-            setAgentMail(mail)
+            const onSubmit = () => {
+                if (
+                    formObject.nom.isComplete === true &&
+                    formObject.email.isComplete === true &&
+                    formObject.phone.isComplete === true &&
+                    formObject.msg.isComplete === true &&
+                    formObject.rgpd === true
+                ) {
+                    
+                }
+            }
             return (
             
                 <div className={style.form}>
