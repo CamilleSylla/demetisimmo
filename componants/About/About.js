@@ -79,7 +79,7 @@ export default function About() {
               borderBottomLeftRadius: "80px",
             }}
           />
-          <img ref={img} src="/img/banner2.jpg" />
+          <img ref={img} src="/img/banner.webp" />
         </div>
         <article ref={content} className={style.content}>
           <div>
