@@ -1,5 +1,5 @@
 import style from './map.module.scss'
-import { GoogleMap, useJsApiLoader, useLoadScript } from '@react-google-maps/api';
+import { GoogleMap, Marker, useJsApiLoader, useLoadScript } from '@react-google-maps/api';
 import { useCallback, useRef, useState } from 'react';
 import mapStyles from './MapStyles'
 
@@ -41,6 +41,7 @@ export default function Map () {
        onLoad={onMapLoad}
        options={options}
        >
+         <Marker position={{ lat: 48.01065361417526, lng:  0.18221582879658224 }} />
        </GoogleMap>
         </section>
     )

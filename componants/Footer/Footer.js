@@ -12,7 +12,7 @@ export default function Footer() {
       url: "vendre",
     },
     {
-      name: "Propriétés",
+      name: "Acheter",
       url: "proprietes",
     },
     {
@@ -36,20 +36,8 @@ export default function Footer() {
   ]
   const Confidentialité = [
       {
-        name: "Informations légales",
-        url: "/",
-      },
-      {
-        name: "Politique de protection des données",
-        url: "/",
-      },
-      {
-        name: "Politique des cookies",
-        url: "/",
-      },
-      {
-        name: "Gestion des cookies",
-        url: "/",
+        name: "Mentions Légales",
+        url: "/mentions-légales",
       },
   ]
 
@@ -94,6 +82,15 @@ export default function Footer() {
                 </Link>
               );
             })}
+          </ul>
+        </div>
+        <div>
+          <p>Nos informations</p>
+          <ul>
+            <li>3 place du 117ème régiment d'infenterie</li>
+            <li>72000, LE MANS</li>
+            <li>02 43 52 49 86</li>
+            <li>contact@dematisimmo.fr</li>
           </ul>
         </div>
       </div>

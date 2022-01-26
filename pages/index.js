@@ -9,6 +9,7 @@ import WhyUs from '../componants/WhyUS/WhyUs'
 import Vendre from '../componants/Vendre/Home/Vendre'
 import axios from 'axios'
 import { useState } from 'react'
+import Location from '../componants/location/Location'
 export default function Home({house, agent, searchSelect}) {
   const [scrollTarget, setScrollTarget] = useState(null)
   return (
@@ -20,6 +21,7 @@ export default function Home({house, agent, searchSelect}) {
       <WhyUs setScrollTarget={setScrollTarget}/>
       <Avis avis={avis}/>
       <Team limit={3} team={agent}/>
+      <Location/>
     </>
   )
 }
