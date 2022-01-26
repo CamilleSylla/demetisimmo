@@ -7,7 +7,7 @@ export default function Form () {
 
     return (
         <form className={style.wrapper}>
-            <p className={style.title}>Contactez-nous ou l'un de nos agent !</p>
+            <p className={style.title}>Contactez-nous ou l’un de nos agents !</p>
             <input type="text" placeholder="Nom et prénom"/>
             <input type="email" placeholder="Adresse email"/>
             <input type="text" placeholder="Objet"/>

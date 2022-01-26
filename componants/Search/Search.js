@@ -2,8 +2,7 @@ import style from './search.module.scss'
 import Link from 'next/link'
 import { useState } from 'react'
 import { useEffect } from 'react/cjs/react.development'
-import { renderCollection } from '../../helper'
-import { RiSearchFill } from 'react-icons/ri'
+import { renderCollection } from '../../helper/helper'
 
 export default function Search ({button, searchSelect}) {
 
