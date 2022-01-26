@@ -52,7 +52,7 @@ export default function CoolForm ({hide, hideStatus, searchSelect}) {
     return (
         <>
         <div className={style.search_zone}>
-        <Search searchSelect={searchSelect} button="Rechercher" />
+        {/* <Search searchSelect={searchSelect} button="Rechercher" /> */}
         </div>
         {/* <Filters toogle={filter}/> */}
         <section className={style.actions}>

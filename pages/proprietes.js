@@ -42,9 +42,9 @@ export default function Proprietes({ houses, searchSelect }) {
 }
 
 export async function getServerSideProps(props) {
-  const searchSelect = await axios
-    .get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
-    .then((res) => res.data);
+  // const searchSelect = await axios
+  //   .get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
+  //   .then((res) => res.data);
   if (props.query.filter !== undefined) {
     const userFilter = JSON.parse(props.query.filter);
     const houses = await axios
