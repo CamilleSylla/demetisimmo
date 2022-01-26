@@ -45,6 +45,9 @@
         font-weight: 900;
         font-size: 2rem;
         p {
+            &:first-of-type {
+                color: #1c3661;
+            }
             width: 100%;
             text-align: right;
             span {

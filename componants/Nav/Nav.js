@@ -16,24 +16,25 @@ export default function Navigation () {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
-        if (router === "/") {
-            gsap
-            .timeline({
-              scrollTrigger: {
-                trigger: "body",
-                start: "top top",
-                end: "top+=5% top",
-                scrub: .3,
-              },
-            })
-            .from(NavRef.current, {
-                opacity: 0
-            }, "nav")
-            .to(Logo.current, {
-                height: "80%",
-                top: "10%",
-                bottom: "10%",
-            }, "nav")
+        const anim = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "body",
+            start: "top top",
+            end: "top+=5% top",
+            scrub: .3,
+          },
+        })
+        .from(NavRef.current, {
+            opacity: 0
+        }, "nav")
+        .to(Logo.current, {
+            height: "80%",
+            top: "10%",
+            bottom: "10%",
+        }, "nav")
+        if (router !== "/") {
+            anim.kill()
         }
     }, [router])
 

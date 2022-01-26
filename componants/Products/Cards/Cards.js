@@ -3,6 +3,7 @@ import style from './cards.module.scss'
 import Team from '../../../Json/Team.json'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
+import { numberWithSpaces } from '../../../helper';
 
 export default function Cards ({data}) {
 
@@ -44,7 +45,7 @@ export default function Cards ({data}) {
         <article className={style.wrapper}>
                 <Agent/>
             <img className={style.main_img} src={data.acf.main_img}/>
-            <span className={style.price}>{data.acf.prix.toLocaleString()}€</span>
+            <span className={style.price}>{numberWithSpaces(data.acf.prix.toLocaleString())}€</span>
             <h1>{data.title.rendered}.</h1>
             <div className={style.infos_icon}>
             <div className={style.icon_wrapper}>

@@ -50,45 +50,26 @@ export default function Ges({ ges }) {
       color: "#9A0FCF",
     },
   ];
-
-  function CursorPosition(value) {
-    let NodeIndex;
-    const Boxes = Array.from(tracker.current.childNodes).filter(el=> el.className == "ges_letter__2wvWa")
-    const item = bareme.filter((el, i) => {
+  const RenderGoodPropertie = ({ value }) => {
+    const Box = bareme.filter((el, i) => {
       if (el.min <= value && value <= el.max) {
-        NodeIndex = i;
         return el;
       }
     });
-    cursor.current.style.left = `${Boxes[NodeIndex].getBoundingClientRect().x}px`
-    cursor.current.style.top = `${tracker.current.getBoundingClientRect().top}px`
-  }
-
-  useEffect(() => {
-      CursorPosition(house_ges);
-  }, [])
-
+    return (
+      <div className={style.value_wrapper}>
+        <div className={style.letter} style={{ background: Box[0].color }}>
+          {Box[0].name}
+        </div>
+        <p style={{color: Box[0].color}}>{ges}KgeqCO2/m² .an</p>
+      </div>
+    );
+  };
   return (
       <>
-      <div ref={cursor} className={style.cursor}>
-          <div className={style.bar} />
-          <div className={style.ges_value}>
-            <p>
-              {house_ges} <span>KgeqCO2/m² .an</span>
-            </p>
-          </div>
-        </div>
 <article className={style.wrapper}>
     <h1>Emission de gaz</h1>
-      <div ref={tracker} className={style.letter_wrap}>
-        {bareme.map((el, i) => {
-          return (
-            <div className={style.letter} key={i} style={{ background: el.color }}>
-              {el.name}
-            </div>
-          );
-        })}
-      </div>
+    <RenderGoodPropertie value={ges} />
     </article>
       </>
     

@@ -1,10 +1,11 @@
+import { numberWithSpaces } from "../../../helper";
 import style from "./header.module.scss";
 
 export default function Header({ product }) {
   return (
     <section className={style.wrapper}>
       <div className={style.price}>
-          <p>{product.acf.prix.toLocaleString()}€</p>
+          <p>{numberWithSpaces(product.acf.prix.toLocaleString())}€</p>
           <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.acf.ref}</p>
       </div>
       <h1>{product.title.rendered}</h1>

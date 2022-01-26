@@ -9,10 +9,15 @@
             padding-bottom: 2vh;
             border: none;
     }
-    .letter_wrap {
-        height: 20vh;
-        // background: chartreuse;
-        position: absolute;
+    .value_wrapper {
+        width: 38%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-weight: 900;
+        }
         .letter {
             position: relative;
             width: 4vw;
@@ -28,45 +33,24 @@
                 margin-right: 0;
             }
         }
-        
     }
+    
 }
 
-.cursor {
-    position: absolute;
-    height: 12vw;
-    width: 4vw;
-    .bar{
-        position: absolute;
-        height: 100%;
-        border-left: 2px solid #1c3661;
-        left: 50%;
-        transform: translate3d(-50%,0,0);
-    }
-    .ges_value {
-        position: absolute;
-        bottom: 0;
-        width: 6vw;
-        height: 6vw;
-        border-radius: 50%;
-        background: #F2F2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 50%;
-        transform: translate3d(-50%,0,0);
-        border: 2px solid #1c3661;
-        font-size: 1rem;
-        font-weight: 900;
-        p {
-            text-align: center;
-            line-height: initial;
-            width: 80%;
-            span {
-                display: block;
-                font-size: .5rem;
+@media screen and (max-width: 990px) {
+    .wrapper {
+        width: 100%;
+        text-align: center;
+        .value_wrapper {
+            width: 100%;
+            flex-direction: column;
+            p {
+                margin-top: 2vh;
+            }
+            .letter {
+                width: 4vh;
+                height: 4vh;
             }
         }
-        
     }
 }
