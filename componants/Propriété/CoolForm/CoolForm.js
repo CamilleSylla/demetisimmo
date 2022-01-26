@@ -3,7 +3,7 @@ import Search from '../../Search/Search'
 import Filters from '../Filters/Filters'
 import style from './coolform.module.scss'
 
-export default function CoolForm ({hide, hideStatus}) {
+export default function CoolForm ({hide, hideStatus, searchSelect}) {
     const [active, setActive ] = useState(false) 
     const [filter, setFilter] = useState(false)
     const form = useRef()
@@ -52,7 +52,7 @@ export default function CoolForm ({hide, hideStatus}) {
     return (
         <>
         <div className={style.search_zone}>
-        <Search button="Rechercher" />
+        <Search searchSelect={searchSelect} button="Rechercher" />
         </div>
         {/* <Filters toogle={filter}/> */}
         <section className={style.actions}>

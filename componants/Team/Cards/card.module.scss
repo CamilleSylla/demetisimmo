@@ -32,7 +32,14 @@
             }
         }
     }
+    &:hover{
     .profile_img {
+        box-shadow: 0px 0px 15px 5px #1c3661;
+    }
+}
+.profile_img {
+        box-shadow: 0px 0px 15px 5px transparent;
+        transition: all ease .5s;
         position: absolute;
         width: 80%;
         height: 80%;

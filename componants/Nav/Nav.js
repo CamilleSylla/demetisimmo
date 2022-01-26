@@ -11,7 +11,7 @@ export default function Navigation () {
     const NavRef = useRef()
     const Logo = useRef()
     const router = useRouter().asPath
-    console.log(router);
+    console.log(router === "/");
     
 
     useEffect(() => {
@@ -28,22 +28,14 @@ export default function Navigation () {
         .from(NavRef.current, {
             opacity: 0
         }, "nav")
-        .to(Logo.current, {
-            height: "80%",
-            top: "10%",
-            bottom: "10%",
-        }, "nav")
-        if (router !== "/") {
-            anim.kill()
-        }
     }, [router])
 
     return (
         <div className={style.container}>
             <div ref={NavRef} className={style.background}/>
             <Link href="/">
-
-            <img style={{cursor: "pointer"}} ref={Logo} src="/Logo/Logo.svg" />
+           <img style={{cursor: "pointer"}} src="/Logo/Logo.svg" />
+            
             </Link>
             <NavLinks/>
             <Link href="/contact">

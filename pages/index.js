@@ -9,11 +9,11 @@ import WhyUs from '../componants/WhyUS/WhyUs'
 import Vendre from '../componants/Vendre/Home/Vendre'
 import axios from 'axios'
 import { useState } from 'react'
-export default function Home({house, agent}) {
+export default function Home({house, agent, searchSelect}) {
   const [scrollTarget, setScrollTarget] = useState(null)
   return (
     <>
-      <Banner servicesRef={scrollTarget}/>
+      <Banner searchSelect={searchSelect} servicesRef={scrollTarget}/>
       <About/>
       <Slideshow houses={house}/>
       <Vendre/>
@@ -29,6 +29,8 @@ export async function getServerSideProps () {
 
   const house = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data)
+  const searchSelect = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
+  .then(res => res.data)
 
   const agent =  await axios.get(`${process.env.NEXT_PUBLIC_API}/agent`)
   .then(res => res.data)
@@ -36,7 +38,8 @@ export async function getServerSideProps () {
   return {
     props: {
       house,
-      agent
+      agent,
+      searchSelect
     }
   }
 }
