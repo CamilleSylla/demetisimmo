@@ -1,4 +1,4 @@
-import { numberWithSpaces } from "../../../helper";
+import { numberWithSpaces } from "../../../helper/helper";
 import style from "./header.module.scss";
 
 export default function Header({ product }) {
