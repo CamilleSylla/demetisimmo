@@ -5,7 +5,7 @@ export default function Selled ({houses}) {
 
     return (
         <section className={style.wrapper}>
-                <h1>Nos derniers bien <span>vendu</span> ...</h1>
+                <h1>Nos derniers biens vendus</h1>
             <div className={style.cards}>
                 {houses.map((el,i) => {
                         return <Cards data={el}/>

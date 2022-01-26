@@ -8,14 +8,16 @@ import Team from '../componants/Team/Home/Team'
 import WhyUs from '../componants/WhyUS/WhyUs'
 import Vendre from '../componants/Vendre/Home/Vendre'
 import axios from 'axios'
+import { useState } from 'react'
 export default function Home({house, agent}) {
+  const [scrollTarget, setScrollTarget] = useState(null)
   return (
     <>
-      <Banner/>
+      <Banner servicesRef={scrollTarget}/>
       <About/>
       <Slideshow houses={house}/>
       <Vendre/>
-      <WhyUs/>
+      <WhyUs setScrollTarget={setScrollTarget}/>
       <Avis avis={avis}/>
       <Team limit={3} team={agent}/>
     </>

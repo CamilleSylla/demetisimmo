@@ -27,8 +27,8 @@ export default function Proprietes({houses}) {
     <div>
       <Spacing value="10vh" />
       <Header
-        pageTitle="Nos propriétés à vendre"
-        desc="Retrouvez l'ensemble de nos propriétés disponible chez Demetis Immo !"
+        pageTitle="Nos biens à vendre"
+        desc="Retrouvez l’ensemble de nos biens disponibles chez Demetis Immo !"
       />
       <div style={search}>{/* <Search/> */}</div>
       <Spacing value="10vh" />

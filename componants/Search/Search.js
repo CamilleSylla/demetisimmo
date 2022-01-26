@@ -20,7 +20,7 @@ const [search, setSearch] = useState({})
     return (
         <div className={style.wrapper}>
             <div>
-                <p>Nombre de pièce</p>
+                <p>Nombre de pièces</p>
                 <select onChange={e => onSelect("piece", e.target.value)}>
                     <option></option>
                     <option>1</option>

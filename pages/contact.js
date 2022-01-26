@@ -13,7 +13,7 @@ export default function Contact() {
     <div>
       <Spacing value="10vh" />
       <section style={content}>
-        <Illustration/>
+        <Illustration />
         <Form />
       </section>
     </div>

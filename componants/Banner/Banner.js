@@ -3,10 +3,10 @@ import Search from "../Search/Search";
 import Layout from "../Layout/Layout";
 import { useEffect, useState } from "react";
 
-export default function Banner() {
+export default function Banner({servicesRef}) {
   const content = {
     h1: "Un projet, plusieurs pôles, un seul interlocuteur",
-    p: "Vous souhaitez vendre ou acheter un bien, nous proposons à nos clients un accompagnement de A à Z.",
+    p: "Vous souhaitez vendre ou acheter un bien, nous vous proposons un accompagnement de A à Z.",
   };
 
   const [logo, setLogo] = useState(null)
@@ -25,7 +25,7 @@ export default function Banner() {
       {logo ?  <img className={style.logo} src="/Logo/Logo.svg"/> : null}
         <h1>{content.h1}</h1>
         <p>{content.p}</p>
-        <button>En savoir plus</button>
+        <button onClick={() => servicesRef.current.scrollIntoView()   }>En savoir plus</button>
       </div>
       <span className={style.label}><p>Trouver mon futur investissement</p></span>
       <div className={style.search}>

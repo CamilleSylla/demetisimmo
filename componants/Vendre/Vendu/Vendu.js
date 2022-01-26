@@ -6,33 +6,25 @@ export default function Accompagnement() {
         <img src="/img/conseiller.png" />
       </div>
       <article className={style.content}>
-        <span>L'accompagnement</span>
         <h1>
-          Vous <span>accompagnez</span> dans la <span>vente</span> de votre bien
+          Vous accompagner dans la vente de votre bien
         </h1>
         <p>
         Demetis Immo s’engage à estimer votre bien gratuitement sous 48h.
         <br/>
-        Nos négociateurs, s’occuperont de toutes les étapes nécessaires à la vente de votre bien : 
-        </p>
+        Nos négociateurs s’occupent de toutes les étapes nécessaires à la vente de votre bien :        </p>
         <ul>
           <li>
-          Photos professionelles
+          Publicité sur nos sites partenaires 
           </li>
           <li>
-          Publicité sur les sites spécialisé
+          Organiser les visites avec les prospects qualifiés
           </li>
           <li>
-          Organisé les visites avec des prospects qualifiés
+          Bilan mensuel 
           </li>
           <li>
-          Compte rendu de visites
-          </li>
-          <li>
-          Bilan mensuelle
-          </li>
-          <li>
-          Prise en charge des diagnostics si vous nous choisissez comme interlocuteur uniques
+          Prise en charge des diagnostics si vous nous choisissez comme interlocuteur unique
           </li>
         </ul>
         <button>Vendre mon bien</button>

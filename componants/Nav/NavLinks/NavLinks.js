@@ -12,24 +12,31 @@ const Menu = [
         url: "vendre"
     },
     {
-        name: "Propriétés",
+        name: "Acheter",
         url: "proprietes"
     },
     {
-        name: "Notre Équipe",
+        name: "Notre équipe",
         url: "equipe"
     },
 ]
 
 export default function NavLinks ({close}) {
 
+    const [mobile, setMobile] = useState(null)
+
+    useEffect(() => {
+
+        let isMobile = window.matchMedia("only screen and (max-width: 990px)").matches
+        if (isMobile) setMobile(true)
+    }, [])
     return (
         <ul>
                 {Menu.map((el, i) => {
 
                     return (
                         <Link href={`/${el.url}`}>
-                            <li onClick={() => close(false)} key={i}> {el.name} </li>
+                            <li onClick={() => mobile ? close(false) : null} key={i}> {el.name} </li>
                         </Link>
                     )
                 })}

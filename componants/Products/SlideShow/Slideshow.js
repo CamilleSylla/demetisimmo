@@ -11,7 +11,7 @@ export default function Slideshow ({houses}) {
         <Layout>
             <div className={style.content}>
                 <span>Acheter</span>
-                <h1 className={style.main}>Retrouvez nos derniers biens <span>disponibles</span> vente</h1>
+                <h1 className={style.main}>Retrouvez nos derniers biens disponibles à la vente</h1>
                 <div className={style.slideshow}>
                     {filterHouses.map((el, i) => {
                         if (i < 3 )return <Cards key={i} data={el}/>

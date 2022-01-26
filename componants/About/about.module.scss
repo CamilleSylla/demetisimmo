@@ -38,11 +38,10 @@
     transform: translate3d(0, -50%, 0);
     h1 {
       padding-top: 2vh;
-      font-weight: 900;
-      font-size: 2rem;
-      span {
-        font-weight: 900;
-      }
+            padding-bottom: 2vh;
+            font-weight: 900;
+            font-size: 2rem;
+            width: 90%;
     }
     span {
       color: #1c3661;
@@ -50,6 +49,7 @@
     }
     p {
       padding-top: 2vh;
+      width: 90%;
     }
     .action {
       width: 62.5%;
