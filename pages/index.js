@@ -29,8 +29,8 @@ export async function getServerSideProps () {
 
   const house = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data)
-  const searchSelect = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
-  .then(res => res.data)
+  // const searchSelect = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
+  // .then(res => res.data)
 
   const agent =  await axios.get(`${process.env.NEXT_PUBLIC_API}/agent`)
   .then(res => res.data)
@@ -39,7 +39,7 @@ export async function getServerSideProps () {
     props: {
       house,
       agent,
-      searchSelect
+      // searchSelect
     }
   }
 }

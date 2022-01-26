@@ -30,7 +30,7 @@ export default function Banner({servicesRef, searchSelect}) {
       </div>
       <span className={style.label}><p>Trouver mon futur investissement</p></span>
       <div className={style.search}>
-        <Search searchSelect={searchSelect} button="Rechercher"/>
+        {/* <Search searchSelect={searchSelect} button="Rechercher"/> */}
       </div>
     </Layout>
   );
