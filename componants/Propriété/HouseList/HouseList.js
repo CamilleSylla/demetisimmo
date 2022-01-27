@@ -1,6 +1,5 @@
-import style from './houselist.module.scss'
-import houses from '../../../Json/House.json'
 import Cards from '../../Products/Cards/Cards'
+import style from './houselist.module.scss'
 
 export default function HouseList ({houses}) {
 
