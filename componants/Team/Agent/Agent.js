@@ -14,6 +14,15 @@ export default function Agent({ agent }) {
               className={style.bio}
               dangerouslySetInnerHTML={{ __html: current.bio }}
             />
+              {current.phone ? 
+              
+            <div style={{marginBottom: "2vh"}} className={style.social}>
+              <img src="/icon/telephone.svg" />
+              <p onClick={() => window.open(`tel:${current.phone}`)}>
+                Appeler {agent.title.rendered} ⬈
+              </p>
+            </div>
+            :null}
             <div className={style.social}>
               <img src="/icon/blue/social/linkedin.svg" />
               <p onClick={() => window.open(current.lkd)}>
