@@ -27,7 +27,7 @@ export default function Avis({avis}) {
         <div className={style.content}>
           <span>Votre satisfaction</span>
           <h1>
-            Ce que <span>nos clients</span> pensent de nous{" "}
+            Ce que nos clients pensent de nous{" "}
           </h1>
           <div className={style.slide_wrapper}>
             

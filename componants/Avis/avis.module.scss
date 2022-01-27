@@ -115,7 +115,7 @@
     }
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
   .content_wrapper {
     position: initial;
     width: 100%;
@@ -123,6 +123,12 @@
     .content {
       position: initial;
       transform: translate3d(0, 0, 0);
+      span {
+        font-size: 3vw;
+      }
+      h1 {
+        font-size: 8vw;
+      }
     }
   }
   .illustration {

@@ -72,7 +72,8 @@
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen 
+  and (max-device-width: 1400px) {
   .resize {
     height: auto;
     .img_wrapper {
@@ -86,7 +87,7 @@
           position: initial;
           border-radius: 0px;
           width: 100%;
-          height: 30vh;
+          height: 50vh;
           transform: translate3d(0, 0, 0);
           object-fit: cover;
       }
@@ -104,10 +105,13 @@
       margin: 0 auto;
       h1 {
         width: 100%;
-        font-size: 1.75rem;
+        font-size: 8vw;
       }
       p {
         width: 100%;
+      }
+      span {
+        font-size: 3vw;
       }
       .action {
         flex-direction: column;

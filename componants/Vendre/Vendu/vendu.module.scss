@@ -41,7 +41,7 @@ bottom: 0;
         }
     }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1400px) {
     .wrapper {
         height: auto;
         .illustration {
@@ -54,6 +54,9 @@ bottom: 0;
             padding: 5vh 0 5vh 0;
             width: 90%;
             margin: 0 auto;
+            h1 {
+                font-size: 8vw;
+            }
             button {
                 margin-top: 5vh;
             }

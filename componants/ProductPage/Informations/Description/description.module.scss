@@ -75,16 +75,36 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
     .wrapper {
         height: auto;
         flex-direction: column;
         .description {
             width: 100%;
+            h1 {
+                font-size: 8vw;
+            }
         }
         .form {
             width: 100%;
+            height: auto;
             margin-top: 5vh;
+            padding: 5vh 0 5vh 0;
+            .content_wrapper {
+                h3 {
+                    font-size: 4vw;
+                }
+                p {
+                    font-size: 3vw;
+                }
+                span {
+                    font-size: 2vw;
+                }
+                button {
+                    font-size: 3vw;
+                    margin: 0 auto;
+                }
+            }
         }
     }
   }

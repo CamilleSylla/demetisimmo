@@ -61,12 +61,34 @@
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1400px) {
     .wrapper {
+        h1 {
+            font-size: 8vw;
+        }
+        .adresse {
+            padding: 2vh 0 2vh 0;
+            img {
+                height: 4vw;
+            }
+            
+        }
+        .informations {
+            .icon_wrapper {
+                p {
+                    font-size: 2vw;
+                }
+            }
+        }
         .price {
             position: initial;
             p {
+                font-size: 5vw;
                 text-align: left;
+            }
+            .ref {
+                padding: 2vh 0 2vh 0;
+                font-size: 3vw;
             }
         }
     }

@@ -30,3 +30,13 @@
         }
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        .content {
+            h1 {
+                font-size: 8vw;
+            }
+        }
+    }
+  }

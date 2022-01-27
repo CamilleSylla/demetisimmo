@@ -38,6 +38,7 @@
         font-weight: 900;
         color: #1c3661;
         text-align: left;
+        width: auto;
     }
     h1 {
         font-size: .9rem;
@@ -74,8 +75,22 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
     .wrapper {
         transform: rotateX(0deg);
+        text-align: left;
+        h1 {
+            font-size: 3vw;
+        }
+        .price {
+            font-size: 4vw;
+        }
+        .infos_icon {
+        .icon_wrapper {
+            p {
+                font-size: 2vw;
+            }
+        }
+    }
         }
       }

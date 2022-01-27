@@ -44,7 +44,7 @@
     }
 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1400px) {
 .content {
     position: initial;
     transform: translate3d(0, 0, 0);
@@ -53,8 +53,10 @@
     height: auto;
     span {
         margin: 0 auto;
+        font-size: 3vw;
     }
     .main {
+        font-size: 8vw;
         text-align: center;
         width: 100%;
     }

@@ -30,7 +30,7 @@
     }
     
     
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1400px) {
         .content {
             padding: 10vh 0 10vh 0;
             position: initial;
@@ -39,6 +39,7 @@
             h1 {
                 width: 90%;
                 margin: 0 auto;
+                font-size: 8rem;
             }
             p {
                 width: 90%;

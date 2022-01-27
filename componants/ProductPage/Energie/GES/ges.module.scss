@@ -40,6 +40,9 @@
     .wrapper {
         width: 100%;
         text-align: center;
+        h1 {
+            font-size: 4vw;
+        }
         .value_wrapper {
             width: 100%;
             flex-direction: column;
