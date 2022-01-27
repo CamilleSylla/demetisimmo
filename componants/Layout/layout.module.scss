@@ -3,13 +3,8 @@
     height: 100vh;
     position: relative;
 }
-
-@media screen and (max-width: 600px) {
-}
-
 @media screen 
-and (max-device-width: 1500px)  
-and (-webkit-min-device-pixel-ratio: 1) { 
+and (max-width: 1400px)  { 
       .wrapper {
           width: 100%;
           height: auto;
