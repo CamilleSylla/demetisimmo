@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import style from './cards.module.scss'
-import Team from '../../../Json/Team.json'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import { numberWithSpaces } from '../../../helper/helper';

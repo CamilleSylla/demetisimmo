@@ -65,7 +65,7 @@ export default function About() {
 
   return (
     <Layout>
-      <div ref={Start} style={{width: "100%", height: "100vh"}}>
+      <div ref={Start} className={style.resize} style={{width: "100%"}}>
         <div className={style.img_wrapper}>
           <div ref={fill} className={style.background} />
           <div

@@ -20,8 +20,8 @@ export default function WhyUs({ setScrollTarget }) {
             permet de répondre à l’ensemble de vos besoins :
           </p>
           <ul>
-            <li>Besoin d'une étude de financement ?</li>
-            <li>Besoins d’un devis de renovation ?</li>
+            <li><span>?</span><p>Besoin d'une étude de financement ?</p></li>
+            <li><span>?</span><p>Besoins d’un devis de renovation ?</p></li>
           </ul>
           <p>
             Nous nous engageons à vous accompagner dans chaque étape de votre
