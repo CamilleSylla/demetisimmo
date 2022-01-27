@@ -1,8 +1,6 @@
-import style from "./description.module.scss";
-import agents from "../../../../Json/Team.json";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import style from "./description.module.scss";
 
 export default function Description({ product }) {
   const [agent, setAgent] = useState(false);
