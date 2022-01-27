@@ -38,25 +38,18 @@ export default function (req, res) {
     } else if (req.body.form === "contact") {
         mailData = {
             from: 'support@demetisimmo.fr',
-            to: req.body.agent,
-            subject: `Nouveau message de ${req.body.nom.value} || ${req.body.bien_id} - ${req.body.bien_name} - ${req.body.reference}`,
+            to: 'carmelosylla@gmail.com',
+            subject: `Demande de contact de  ${req.body.nom} - ${req.body.objet} `,
             text: `
             ######################
             Information Client
             ######################\n
-            Nom : ${req.body.nom.value}
-            Email : ${req.body.email.value}
-            Tel : ${req.body.phone.value}\n
-            ######################
-            Information Bien
-            ######################\n
-            Bien :  ${req.body.bien_name}
-            ID : ${req.body.bien_id}
-            Référence Bien : ${req.body.reference}\n
+            Nom : ${req.body.nom}
+            Email : ${req.body.email}\n
             ######################
             MESSAGE
             ######################\n
-            ${req.body.msg.value}
+            ${req.body.msg}
             `,
            }
     } else {

@@ -105,8 +105,7 @@ export default function Description({ product }) {
           <div className={style.content_wrapper}>
             <input type="checkbox" onChange={() => (formObject.rgpd = true)} />
             <span>
-              {" "}
-              en cochant cette case, j'accepte que mes informations soient
+              En cochant cette case, j'accepte que mes informations soient
               conservées afin d'etre recontacter dans une demarche commerciale.
             </span>
           </div>
