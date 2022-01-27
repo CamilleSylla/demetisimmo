@@ -4,8 +4,8 @@ import { useCallback, useRef, useState } from 'react';
 import mapStyles from './MapStyles'
 
 const center = {
-    lat: 47.990608146859955,
-    lng: 0.20015376809866467
+    lat: 48.01065361417526,
+    lng:  0.18221582879658224
 }
 const apiKey = "AIzaSyDbCf9rd6UXkL_DGwsb-5b_IN7i7Y3bULo"
 const mapContainerStyle = {
@@ -36,7 +36,7 @@ export default function Map () {
         <section className={style.wrapper}>
 <GoogleMap
        mapContainerStyle={mapContainerStyle}
-       zoom={9}
+       zoom={12}
        center={center}
        onLoad={onMapLoad}
        options={options}

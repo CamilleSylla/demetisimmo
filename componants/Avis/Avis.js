@@ -5,16 +5,16 @@ export default function Avis({avis}) {
     const last = avis[0]
 
     const CardAvis = ({avis}) => {
-
+      console.log(avis);
         return (
             <div className={style.card_wrapper}>
             <article className={style.card}>
-                        <img src={avis.profile}/>
+                        <img src={avis.acf.photo === false ? "/icon/user.svg" : avis.acf.photo}/>
                         <div className={style.text_content}>
-                            <p>{avis.avis}</p>
+                            <p>{avis.acf.text}</p>
                             <div>
-                                <h3>{avis.auteur}</h3>
-                                <span>{avis.poste_auteur}</span>
+                                <h3>{avis.acf.auteur}</h3>
+                                <span>{avis.acf.info}</span>
                             </div>
                         </div>
                 </article>

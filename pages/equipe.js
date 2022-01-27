@@ -19,8 +19,8 @@ export default function Equipe({ team }) {
     <div>
       <Spacing value="10vh" />
       <Header
-        pageTitle="Rencontrez notre equipe Spécialistes"
-        desc="Demmetis Immo met a votre disposition ses conseillers"
+        pageTitle="Rencontrez notre équipe de spécialistes"
+        desc="Demmetis Immo met à votre disposition ses conseillers."
       />
       <Layout>
         <Agent team={team} agent={agent} />
@@ -30,7 +30,6 @@ export default function Equipe({ team }) {
   );
 }
 export async function getServerSideProps() {
-  // https://api.demetisconseil.fr/wp-json/wp/v2/biens
 
   const team = await axios
     .get(`${process.env.NEXT_PUBLIC_API}/agent`)

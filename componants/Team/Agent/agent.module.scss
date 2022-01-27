@@ -12,16 +12,27 @@
         width: 45%;
         position: relative;
         .container {
-            height: 60%;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
+            height: auto;
+            .bio {
+                padding: 2vh 0 2vh 0;
+                p {
+                    padding: 2vh 0 2vh 0;
+                    br {
+                        display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 2vh; 
+                    }
+                }
+            }
         }
     }
     .social {
         display: flex;
         align-items: center;
         font-weight: 700;
+        &:last-of-type {
+            margin-top: 2vh;
+        }
         * {
             align-self: flex-end;
         }
@@ -53,13 +64,19 @@
         .infos {
             padding: 5vh 0 5vh 0;
             width: 90%;
-            height: 60vh;
+            height: auto;
             margin: 0 auto;
             text-align: left;
             .container {
                 height: 100%;
+                .bio {
+                    width: 100%;
+                }
             }
             .social {
+                &:last-of-type {
+                    margin-top: 2vh;
+                }
                 img {
                     width: 3vh;
                 }

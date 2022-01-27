@@ -7,6 +7,7 @@ export default function Location() {
     <div className={style.location}>
       <article className={style.content}>
           <div className={style.container}>
+              <img src="/Logo/Logo_w.svg"/>
         <h1>Nous rencontrer !</h1>
         <ul>
           <li>3 place du 117ème régiment d'infenterie</li>

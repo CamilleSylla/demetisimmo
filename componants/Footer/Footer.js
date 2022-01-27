@@ -37,7 +37,7 @@ export default function Footer() {
   const Confidentialité = [
       {
         name: "Mentions Légales",
-        url: "/mentions-légales",
+        url: "/mentions-legales",
       },
   ]
 

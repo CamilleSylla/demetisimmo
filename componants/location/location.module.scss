@@ -12,6 +12,10 @@
       h1 {
         color: #f2f2f2;
       }
+      img {
+        width: 25%;
+        padding: 0 0 5vh 0;
+      }
       ul {
         list-style: none;
         padding: 5vh 0 5vh 0;
@@ -40,6 +44,9 @@
                 h1 {
                     font-size: 2rem;
                 }
+                img {
+                  padding: 0;
+                }
                 ul {
                     list-style: none;
                     padding: 2vh 0 2vh 0;
@@ -51,6 +58,7 @@
                   }
                   button {
                       font-size: .75rem;
+                      margin-top: 1vh;
                   }
             }
         }
