@@ -1,46 +1,45 @@
 .wrapper {
-    height: auto;
-    padding: 10vh 0 10vh 0;
+  height: auto;
+  padding: 10vh 0 10vh 0;
   .title {
-      text-align: center;
+    text-align: center;
     h1 {
-        font-size: 2rem;
-        font-weight: 900;
-      }
-      span {
-        color: #1c3661;
-        font-weight: 700;
-      }
-      p {
-          margin: 0 auto;
-          margin-top: 2%;
-          margin-bottom: 4%;
-          text-align: center;
-          width: 40%;
-      }
+      font-size: 2rem;
+      font-weight: 900;
+    }
+    span {
+      color: #1c3661;
+      font-weight: 700;
+    }
+    p {
+      margin: 0 auto;
+      margin-top: 2%;
+      margin-bottom: 4%;
+      text-align: center;
+      width: 40%;
+    }
   }
 
-  
   .cards_wrapper {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: space-evenly;
+  flex-wrap:wrap;
     .card {
-        width: 25vw;
-        height: auto;
+      flex: 0 0 33.333333%;
+      padding: 0 2vw 0 2vw;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 10px;
       border-radius: 20px;
-      transition: all ease .5s;
+      transition: all ease 0.5s;
       border: 1px solid transparent;
 
       .img_wrapper {
-          margin-top: 3vh;
+        margin-top: 3vh;
         width: 10vh;
         background: rgba(#1c3661, 0.3);
         height: 10vh;
@@ -68,40 +67,38 @@
         font-size: 0.8rem;
       }
       p {
-          margin-top: 2vh;
-          text-align: center;
-          font-size: .8rem;
+        margin-top: 2vh;
+        text-align: center;
+        font-size: 0.8rem;
       }
     }
   }
 }
 @media screen and (max-width: 1400px) {
   .wrapper {
-      height: auto;
-      .title {
-        text-align: center;
-        p {
-          
-            width: 80%;
-        }
-    }
-      .cards_wrapper {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+    height: auto;
+    .title {
+      text-align: center;
+      p {
         width: 80%;
-        margin: 0 auto;
-        .card {
-          padding: 5vh 0 5vh 0;
-          width: 100%;
-          h1 {
-            text-align: center;
-            font-size: 6vw;
-          }
-          p {
-            font-size: 3vw;
-          }
+      }
+    }
+    .cards_wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+      margin: 0 auto;
+      .card {
+        padding: 5vh 0 5vh 0;
+        width: 100%;
+        h1 {
+          text-align: center;
+          font-size: 6vw;
+        }
+        p {
+          font-size: 3vw;
         }
       }
+    }
   }
-
 }
