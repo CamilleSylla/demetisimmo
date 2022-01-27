@@ -7,7 +7,7 @@ import Selled from "../componants/Vendre/Selled/Selled";
 import Accompagnement from "../componants/Vendre/Vendu/Vendu";
 export default function Vendre({ houses }) {
   return (
-    <div>
+    <>
       <Spacing value="10vh" />
       <Header
         pageTitle="Vendre mon bien avec Demetis Immo"
@@ -20,7 +20,7 @@ export default function Vendre({ houses }) {
       <Selled houses={houses} />
       <Spacing value="10vh" />
       <Form />
-    </div>
+    </>
   );
 }
 
