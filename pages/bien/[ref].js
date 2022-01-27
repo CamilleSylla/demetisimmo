@@ -1,4 +1,3 @@
-import house from "../../Json/House.json";
 import Spacing from "../../componants/Spacing/spacing";
 import Header from "../../componants/ProductPage/Header/Header";
 import Gallery from "../../componants/ProductPage/Gallery/Gallery";
