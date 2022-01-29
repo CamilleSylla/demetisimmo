@@ -18,7 +18,7 @@ export default function Fonctionnement () {
             grid_position : "1 / 3 / 2 / 4"
         },
         {
-            title: "Photo Professionelles",
+            title: "Photo professionelles",
             desc: "Nous nous chargerons de promouvoir votre bien sous son meilleur angle.",
             icon: "/icon/picture.svg",
             color: "",
@@ -43,7 +43,7 @@ export default function Fonctionnement () {
     const Card = ({el}) => {
 
         return (
-            <article style={{gridArea: el.grid_position}} className={style.card}>
+            <article  className={style.card}>
                 <div className={style.img_wrapper}>
                     <img src={el.icon}/>
                 </div>
