@@ -13,7 +13,7 @@ export default function About() {
 
   useEffect(() => {
      
-    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches
+    let isMobile = window.matchMedia("max-width: 991.98px").matches
 
     if (!isMobile) {
       gsap

@@ -46,7 +46,7 @@ export default function Footer() {
       <div className={style.content}>
         <div>
           <img src="/Logo/Logo_w.svg" />
-          <p style={{width: "10vw", fontSize: ".5rem", lineHeight: "initial"}}>
+          <p style={{width: "100%", fontSize: ".5rem", lineHeight: "initial"}}>
               Copyright 2021 DemetisImmo<br/>Tous droits réservés.
               </p>
         </div>

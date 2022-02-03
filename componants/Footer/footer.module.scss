@@ -50,7 +50,7 @@
         
     }
 }
-@media screen and (max-width: 900px) {
+@media (max-width: 991.98px) {
     .wrapper {
         height: auto;
         .content {
@@ -58,17 +58,17 @@
             div {
                 margin: 0 auto;
                 width: 80%;
+                padding: 2.5vh 0 2.5vh 0;
                 img {
                     width: 40%;
                     margin: 0 auto;
                 }
                 p {
-                    font-size: 2rem;
+                    font-size: 4rem;
                 }
                 ul {
-                    padding: 2.5vh 0 2.5vh 0;
                     li {
-                        font-size: 1rem;
+                        font-size: 3rem;
                     }
                 }
             }

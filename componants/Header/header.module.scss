@@ -19,15 +19,20 @@
         }
     }
 }
-@media screen and (max-width: 1400px) {
+@media (max-width: 991.98px) {
     .wrapper {
+        height: auto;
+        padding: 5vh 0 5vh 0;
         .title {
+            position: initial;
             width: 80%;
+            transform: initial;
+            margin-left: 10%;
             h1 {
-                font-size: 6vw;
+                font-size: 4vw;
             }
             p {
-                font-size: 3vw;
+                font-size: 2vw;
             }
         }
     }
