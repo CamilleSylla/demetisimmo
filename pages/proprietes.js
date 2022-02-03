@@ -35,7 +35,6 @@ export default function Proprietes({ houses, searchSelect }) {
       <CoolForm searchSelect={searchSelect} hideStatus={map} hide={setMap} />
       <section style={list}>
         <HouseList houses={houses} />
-        {/* {map ? <Map/> : null} */}
       </section>
     </div>
   );

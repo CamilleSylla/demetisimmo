@@ -9,7 +9,11 @@ export default function HouseList ({houses}) {
         <div className={style.wrapper}>
             <article className={style.head}>
                 <h1>Propriétés de Demetis Immo</h1>
-                <p>{houses.length} biens sont disponibles a l'achat {houses.length ? null : (<Link href="/proprietes"><span style={{fontWeight: "bold"}}>Retrouvez tous nos biens</span></Link>)}</p>
+                <p style={{paddingTop: "2vh", fontWeight: "bold"}}>
+                    {!houses.length ? "Auncun bien n'est disponible à l'achat" : null}
+                    {houses.length == 1 ? "1 bien est disponible à l'achat" : null}
+                    {houses.length > 1 ? `${houses.length} biens sont disponibles à l'achat `: null}
+                    <Link href="/proprietes"><button style={{fontWeight: "bold", marginLeft : "2vw"}}>Retrouvez tous nos biens</button></Link></p>
             </article>
             <div className={style.list}>
                 {houses.map((el, i) => {

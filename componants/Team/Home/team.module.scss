@@ -6,9 +6,10 @@
   align-items: center;
   justify-content: space-evenly;
   .intro {
-    display: flex;
-    justify-content: space-between;
     width: 80%;
+    p {
+      padding-top: 1vh;
+    }
     margin: 0 auto;
     h1 {
       width: 50%;

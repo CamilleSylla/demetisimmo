@@ -25,7 +25,6 @@ export default function Home({house, agent, searchSelect, avis}) {
 }
 
 export async function getServerSideProps () {
-  // https://api.demetisconseil.fr/wp-json/wp/v2/biens
 
   const house = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens`)
   .then(res => res.data)

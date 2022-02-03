@@ -12,8 +12,10 @@ export default function Accompagnement() {
         <h1>
           Vous accompagner dans la vente de votre bien
         </h1>
-        <p>
+        <p >
+          <span style={{fontWeight: "bold"}}>
         Demetis Immo s’engage à estimer votre bien gratuitement sous 48h.
+        </span>
         <br/>
         Nos négociateurs s’occupent de toutes les étapes nécessaires à la vente de votre bien :        </p>
         <ul>

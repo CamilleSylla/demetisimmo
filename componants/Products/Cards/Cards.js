@@ -3,10 +3,12 @@ import style from './cards.module.scss'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import { numberWithSpaces } from '../../../helper/helper';
+import {decodeHTMLEntities} from '../../../helper/tools'
 
 export default function Cards ({data}) {
 
     const [ agent, setAgent] = useState(false)
+    const [ load, setLoad] = useState(false)
 
     const disponible = {
         background : "#1c3661",
@@ -36,6 +38,7 @@ export default function Cards ({data}) {
             .then(res => {
                 setAgent(res.data.acf.vignette)
             })
+            setLoad(true)
     }, [])
 
 
@@ -45,7 +48,7 @@ export default function Cards ({data}) {
                 <Agent/>
             <img className={style.main_img} src={data.acf.main_img}/>
             <span className={style.price}>{numberWithSpaces(data.acf.prix.toLocaleString())}€</span>
-            <h1>{data.title.rendered}.</h1>
+            <h1>{load === true ? decodeHTMLEntities(data.title.rendered) : null}</h1>
             <div className={style.infos_icon}>
             <div className={style.icon_wrapper}>
                     <img src="/icon/blue/area.svg"/>

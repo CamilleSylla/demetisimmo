@@ -1,14 +1,21 @@
+import { useEffect, useState } from "react";
 import { numberWithSpaces } from "../../../helper/helper";
+import { decodeHTMLEntities } from "../../../helper/tools";
 import style from "./header.module.scss";
 
 export default function Header({ product }) {
+  const [load, setLoad] = useState(false)
+  useEffect(() => {
+    setLoad(true)
+
+  },  [])
   return (
     <section className={style.wrapper}>
       <div className={style.price}>
           <p>{numberWithSpaces(product.acf.prix.toLocaleString())}€</p>
           <p className={style.ref}>Référence <span>Demetis Immo</span> : {product.acf.ref}</p>
       </div>
-      <h1>{product.title.rendered}</h1>
+      <h1>{load === true ? decodeHTMLEntities(product.title.rendered) : product.title.rendered}</h1>
       <div className={style.adresse}>
         <img src="/icon/blue/location.svg" />
         <p>{product.acf.ville}, {product.acf.cp}</p>

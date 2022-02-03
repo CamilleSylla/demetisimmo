@@ -10,32 +10,34 @@ export default function Circle() {
   const animation_360 = useRef()
   const circle = useRef();
   const inside = useRef();
-
+  
   const CardContent = [
     {
-      service: "Transaction Immobilière",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum justo sed diam",
-      icon: "/transaction.svg",
+      service: "Gestion de patrimoine ",
+      icon: "/colonne.svg",
+      desc: "investissements immobiliers sur mesure, placements financiers, dispositifs de réduction d’impôts, préparation de votre retraite… Notre équipe vous propose un accompagnement basé sur la confiance et la confidentialité.",
       link: "/",
     },
     {
       service: "Service financement",
       icon: "/euro.svg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum justo sed diam",
+      desc: "Vous recherchez le meilleur taux pour votre prêt immobilier ? Notre pôle vous accompagne dans vos démarches.",
       link: "/",
     },
     {
       service: "Travaux",
       icon: "/travaux.svg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum justo sed diam",
+      desc: "Qu’il s’agisse de votre résidence principale ou d’un investissement locatif, nous réalisons tous types de travaux. Notre équipe qualifiée et expérimentée est à votre disposition pour la création de vos futurs projets.",
       link: "/",
     },
     {
-      service: "Gestion de patrimoine ",
-      icon: "/colonne.svg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum justo sed diam",
+      service: "Transaction Immobilière",
+      desc: "Un projet unique, plusieurs pôles, un seul interlocuteur pour vous accompagner dans vos projets immobiliers.",
+      icon: "/transaction.svg",
       link: "/",
     },
+    
+    
   ];
 
   useEffect(() => {
@@ -111,7 +113,7 @@ export default function Circle() {
           return (
             <article data-key={i} key={i}>
               <img src={`/icon/blue/${el.icon}`} />
-              <h1>{el.service}</h1>
+              <h1 style={{width: "80%"}}>{el.service}</h1>
             </article>
           );
         })}

@@ -85,7 +85,7 @@ export default function About() {
           <div>
             <span>A propos</span>
             <h1>
-              Une interprofessionnalité au service de nos client
+              Une interprofessionnalité au service de nos clients
             </h1>
             <p>
               Demetis immo est le résultat d’une fusion entre un cabinet de
