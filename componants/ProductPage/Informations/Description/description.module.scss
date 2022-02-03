@@ -91,14 +91,26 @@
             margin-top: 5vh;
             padding: 5vh 0 5vh 0;
             .content_wrapper {
+                display: flex;
+                flex-direction: column;
+                
                 h3 {
                     font-size: 4vw;
+                    padding-top: 4vh;
                 }
                 p {
                     font-size: 3vw;
                 }
                 span {
-                    font-size: 2vw;
+                    margin-top: 2vh;
+                    font-size: 3vw;
+                    text-align: center;
+                }
+                form  {
+                    input {
+                        height: 8vh;
+                    }
+
                 }
                 button {
                     font-size: 3vw;

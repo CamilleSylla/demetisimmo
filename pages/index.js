@@ -16,7 +16,7 @@ export default function Home({house, agent, searchSelect, avis}) {
       <About/>
       <Slideshow houses={house}/>
       <Vendre/>
-      <WhyUs setScrollTarget={setScrollTarget}/>
+      <WhyUs team={agent} setScrollTarget={setScrollTarget}/>
       <Team limit={3} team={agent}/>
       <Location/>
       <Avis avis={avis}/>

@@ -1,6 +1,7 @@
 import style from "./members.module.scss";
 
 export default function Members({ team, agent, setAgent }) {
+  
   return (
     <div className={style.wrapper}>
       {team.map((el, i) => {

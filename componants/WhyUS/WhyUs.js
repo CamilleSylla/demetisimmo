@@ -1,10 +1,26 @@
-import { useEffect, useRef } from "react";
+import { useRouter } from "next/dist/client/router";
+import { useContext, useEffect, useRef } from "react";
+import { TeamContext } from "../../context/TeamContext";
 import Layout from "../Layout/Layout";
 import Circle from "./Circle/Circle";
 import style from "./whyus.module.scss";
 
-export default function WhyUs({ setScrollTarget }) {
+export default function WhyUs({ setScrollTarget, team }) {
   const scrollRef = useRef();
+  const [agent, setAgent] = useContext(TeamContext);
+  const route = useRouter()
+  const onFinancementClick = () => {
+    const findEddy = team.find(info => info.acf.email === "teddy.beasse@demetisimmo.fr")
+    if (findEddy) {
+      setAgent(findEddy)
+      route.push("/equipe")
+      return true
+    } else {
+      route.push("/equipe")
+      return false
+    }
+    
+  }
 
   useEffect(() => {
     setScrollTarget(scrollRef);
@@ -20,8 +36,8 @@ export default function WhyUs({ setScrollTarget }) {
             permet de répondre à l’ensemble de vos besoins :
           </p>
           <ul>
-            <li><span>?</span><p>Besoin d'une étude de financement ?</p></li>
-            <li style={{cursor: "pointer"}} onClick={() => window.open('https://nos-travaux.fr/')}><span>?</span><p>Besoin d’un devis de rénovation ?</p></li>
+            <li onClick={onFinancementClick}><span>?</span><p>Besoin d'une étude de financement ? <br/><a style={{color: "#A67D03", fontWeight: "bold"}}>Cliquez ici</a></p></li>
+            <li style={{cursor: "pointer"}} onClick={() => window.open('https://nos-travaux.fr/')}><span>?</span><p>Besoin d’un devis de rénovation ?<br/><a style={{color: "#A67D03", fontWeight: "bold"}}>Cliquez ici</a></p></li>
           </ul>
           <p>
             Nous nous engageons à vous accompagner dans chaque étape de votre

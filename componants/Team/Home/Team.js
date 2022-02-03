@@ -1,9 +1,9 @@
 import Cards from '../Cards/Cards'
 import style from './team.module.scss'
 import Link from 'next/link'
+import { useContext } from 'react';
 
 export default function Team ({limit, team}) {
-
     const smallTeam = team.slice(0, limit)
     return (
         <section className={style.wrapper}>
@@ -13,9 +13,8 @@ export default function Team ({limit, team}) {
             </article>
             <div className={style.cards_grid}>
                 {smallTeam.map((el,i) => {
-
                     return (
-                        <Cards agent={el}/>
+                        <Cards key={i} team={el} index={i}/>
                     )
                 })}
 

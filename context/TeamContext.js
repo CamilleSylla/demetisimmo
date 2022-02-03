@@ -7,9 +7,9 @@ export const TeamContext = createContext();
 
 
 export function TeamProvider(props) {
-    const [active, setActive] = useState(0)
+    const [agent, setAgent] = useState(0)
   return (
-    <TeamContext.Provider value={[active, setActive]}>
+    <TeamContext.Provider value={[agent, setAgent]}>
       {props.children}
     </TeamContext.Provider>
   );

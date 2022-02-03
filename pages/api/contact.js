@@ -66,6 +66,28 @@ export default async function (req, res) {
             ${req.body.msg}
             `,
            }
+    } else if (req.body.form === "vendre") {
+
+      mailData = {
+        from: 'support@demetisimmo.fr',
+        to: 'carmelosylla@gmail.com',
+        subject: `${req.body.type} - ${req.body.nom} ${req.body.prenom} souhaite des informations pour vendre !`,
+        text: `
+        ######################
+        Information Client
+        ######################\n
+        Nom : ${req.body.nom} ${req.body.prenom}
+        Tel : ${req.body.tel} 
+        Email : ${req.body.email}\n
+        ######################
+        Informations du Bien 
+        ######################\n
+        Type : ${req.body.type}
+        Adresse : ${req.body.num} ${req.body.rue}
+        Ville / Commune : ${req.body.ville}, ${req.body.cp}
+        `,
+       }
+
     } else {
         res.status(400).send(`${req.body.nom.value}, une erreur c'est produite, veuillez recommencer ulterieurement`)
     }

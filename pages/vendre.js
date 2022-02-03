@@ -5,9 +5,11 @@ import Spacing from "../componants/Spacing/spacing";
 import Form from "../componants/Vendre/Form/Form";
 import Selled from "../componants/Vendre/Selled/Selled";
 import Accompagnement from "../componants/Vendre/Vendu/Vendu";
+import { VendreProvider } from "../context/vendreContext";
 export default function Vendre({ houses }) {
   return (
     <>
+    <VendreProvider>
       <Spacing value="10vh" />
       <Header
         pageTitle="Vendre mon bien avec Demetis Immo"
@@ -20,6 +22,7 @@ export default function Vendre({ houses }) {
       <Selled houses={houses} />
       <Spacing value="10vh" />
       <Form />
+      </VendreProvider>
     </>
   );
 }

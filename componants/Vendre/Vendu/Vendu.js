@@ -1,5 +1,8 @@
+import { useContext } from "react";
+import { VendreContext } from "../../../context/vendreContext";
 import style from "./vendu.module.scss";
 export default function Accompagnement() {
+  const [open, setOpen] = useContext(VendreContext)
   return (
     <section className={style.wrapper}>
       <div className={style.illustration}>
@@ -27,7 +30,7 @@ export default function Accompagnement() {
           Prise en charge des diagnostics si vous nous choisissez comme interlocuteur unique
           </li>
         </ul>
-        <button>Vendre mon bien</button>
+        <button onClick={() => setOpen(!open)}>Vendre mon bien</button>
       </article>
     </section>
   );
