@@ -21,13 +21,12 @@ export default function WhyUs({ setScrollTarget }) {
           </p>
           <ul>
             <li><span>?</span><p>Besoin d'une étude de financement ?</p></li>
-            <li><span>?</span><p>Besoins d’un devis de renovation ?</p></li>
+            <li style={{cursor: "pointer"}} onClick={() => window.open('https://nos-travaux.fr/')}><span>?</span><p>Besoin d’un devis de rénovation ?</p></li>
           </ul>
           <p>
             Nous nous engageons à vous accompagner dans chaque étape de votre
-            projet
+            projet.
           </p>
-          <button>Nos services</button>
         </div>
       </article>
       <Circle />

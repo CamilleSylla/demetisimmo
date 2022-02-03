@@ -21,7 +21,7 @@ export default function Navigation () {
           scrollTrigger: {
             trigger: "body",
             start: "top top",
-            end: "top+=5% top",
+            end: "top+=2% top",
             scrub: .3,
           },
         })

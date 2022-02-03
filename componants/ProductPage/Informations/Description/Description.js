@@ -104,7 +104,7 @@ export default function Description({ product }) {
             <input type="checkbox" onChange={() => (formObject.rgpd = true)} />
             <span>
               En cochant cette case, j'accepte que mes informations soient
-              conservées afin d'etre recontacter dans une demarche commerciale.
+              conservées afin d'être recontacté dans une démarche commerciale.
             </span>
           </div>
 

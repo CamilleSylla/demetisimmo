@@ -8,12 +8,12 @@ export default function Location() {
       <article className={style.content}>
           <div className={style.container}>
               <img src="/Logo/Logo_w.svg"/>
-        <h1>Nous rencontrer !</h1>
+        <h1>Nous rencontrer</h1>
         <ul>
-          <li>3 place du 117ème régiment d'infenterie</li>
+          <li>5 place du 117ème régiment d'infanterie</li>
           <li>72000, LE MANS</li>
           <li style={{cursor: "pointer", fontWeight: "bold"}} onClick={() => window.open('tel:02 43 52 49 86')}>02 43 52 49 86</li>
-          <li style={{cursor: "pointer", fontWeight: "bold"}} onClick={() => window.open('mailto:contact@dematisimmo.fr')}>contact@dematisimmo.fr</li>
+          <li style={{cursor: "pointer", fontWeight: "bold"}} onClick={() => window.open('mailto:contact@demetisimmo.fr')}>contact@demetisimmo.fr</li>
         </ul>
         <Link href="/contact">
           <button>Contact</button>

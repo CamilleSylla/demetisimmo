@@ -79,13 +79,13 @@ export default function About() {
               borderBottomLeftRadius: "80px",
             }}
           />
-          <img ref={img} src="/img/banner.webp" />
+          <img ref={img} src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
         </div>
         <article ref={content} className={style.content}>
           <div>
             <span>A propos</span>
             <h1>
-              Une interprofessionnalité au service de nos clients.
+              Une interprofessionnalité au service de nos client
             </h1>
             <p>
               Demetis immo est le résultat d’une fusion entre un cabinet de

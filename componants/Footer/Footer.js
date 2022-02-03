@@ -87,7 +87,7 @@ export default function Footer() {
         <div>
           <p>Nos informations</p>
           <ul>
-            <li>3 place du 117ème régiment d'infenterie</li>
+            <li>5 place du 117ème régiment d'infanterie</li>
             <li>72000, LE MANS</li>
             <li onClick={() => window.open('tel:02 43 52 49 86')}>02 43 52 49 86</li>
             <li onClick={() => window.open('mailto:contact@demetisimmo.fr')}>contact@dematisimmo.fr</li>

@@ -8,8 +8,8 @@ export default function HouseList ({houses}) {
     return (
         <div className={style.wrapper}>
             <article className={style.head}>
-                <h1>Propriétes de Demetis Immo</h1>
-                <p>{houses.length} biens sont disponibles a l'achat {houses.length ? null : (<Link href="/proprietes"><span>Toutes nos propriétés</span></Link>)}</p>
+                <h1>Propriétés de Demetis Immo</h1>
+                <p>{houses.length} biens sont disponibles a l'achat {houses.length ? null : (<Link href="/proprietes"><span style={{fontWeight: "bold"}}>Retrouvez tous nos biens</span></Link>)}</p>
             </article>
             <div className={style.list}>
                 {houses.map((el, i) => {

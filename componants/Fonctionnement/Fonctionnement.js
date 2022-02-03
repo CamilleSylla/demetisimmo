@@ -8,35 +8,30 @@ export default function Fonctionnement () {
             desc: "Nos experts sauront mesurer la valeur actuelle de votre bien et comment en tirer le meilleur.",
             icon: "/icon/blue/loupe.svg",
             color: "",
-            grid_position : " 1 / 1 / 2 / 2"
         },
         {
             title: "Diffusion et visite",
-            desc: " Demetis Immo mettra ses outils en action pour promouvoir votre bien",
+            desc: " Demetis Immo mettra ses outils en action pour promouvoir votre bien.",
             icon: "/icon/blue/door_open.svg",
             color: "",
-            grid_position : "1 / 3 / 2 / 4"
         },
         {
-            title: "Photo professionelles",
+            title: "Photos professionelles",
             desc: "Nous nous chargerons de promouvoir votre bien sous son meilleur angle.",
             icon: "/icon/picture.svg",
             color: "",
-            grid_position : " 2 / 4 / 3 / 5"
         },
         {
             title: "Suivi et accompagnement",
             desc: "Un négociateur dédié vous accompagnera dans le suivi de votre dossier.",
             icon: "/icon/blue/group.svg",
             color: "",
-            grid_position : "1 / 5 / 2 / 6"
         },
         {
-            title: "Diagnostic Offert",
-            desc: "Prise en charge des diagnostics si vous nous choisissez comme interlocuteur uniques.",
+            title: "Diagnostics offerts",
+            desc: "Prise en charge des diagnostics si vous nous choisissez comme interlocuteur unique.",
             icon: "/icon/list.png",
             color: "",
-            grid_position : "2 / 2 / 3 / 3"
         },
     ]
 

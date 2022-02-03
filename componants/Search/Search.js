@@ -34,7 +34,7 @@ export default function Search({ button, searchSelect }) {
       </div>
       <div>
         <div className={style.border} />
-        <p>Type de Bien</p>
+        <p>Type de bien</p>
         <select onChange={(e) => onSelect("type", e.target.value)}>
           <option></option>
           {renderCollection(searchSelect, "type")

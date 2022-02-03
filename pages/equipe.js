@@ -20,7 +20,7 @@ export default function Equipe({ team }) {
       <Spacing value="10vh" />
       <Header
         pageTitle="Rencontrez notre équipe de spécialistes"
-        desc="Demmetis Immo met à votre disposition ses conseillers."
+        desc="Demetis Immo met à votre disposition ses conseillers."
       />
       <Layout>
         <Agent team={team} agent={agent} />

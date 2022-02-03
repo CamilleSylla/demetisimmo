@@ -36,7 +36,7 @@ export default function Map () {
         <section className={style.wrapper}>
 <GoogleMap
        mapContainerStyle={mapContainerStyle}
-       zoom={12}
+       zoom={14}
        center={center}
        onLoad={onMapLoad}
        options={options}

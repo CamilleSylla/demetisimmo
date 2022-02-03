@@ -34,7 +34,7 @@ export default function Calculate({ prix }) {
               <img className={style.illustration} src='/icon/blue/city.svg'/>
               <img className={style.illustration2} src='/icon/blue/door.svg'/>
 
-      <h1>Calculez votre mensualité</h1>
+      <h1>Calculez votre mensualité !</h1>
       <form>
         <div className={style.input}>
           <input type="number" value={prix} readonly />
@@ -43,6 +43,7 @@ export default function Calculate({ prix }) {
           <input
             type="number"
             placeholder="Votre apport : 0"
+            min="1"
             onChange={(e) => setData({ ...data, apport: e.target.value })}
           />
         </div>
@@ -50,6 +51,7 @@ export default function Calculate({ prix }) {
           <input
             type="number"
             placeholder="Taux d'emprunt : 1.05"
+            min="1"
             onChange={(e) => setData({ ...data, taux: e.target.value })}
           />
         </div>
@@ -61,15 +63,13 @@ export default function Calculate({ prix }) {
           </select>
         </div>
       </form>
-      <Link href="/contact">
-      <button>Demander une étude</button>
-      </Link>
+      <button onClick={() => window.open('https://nos-travaux.fr/')}>Demander une étude</button>
       <div className={style.result_wrapper}>
         <div className={style.result}>
             <h3>Vos mensualités :</h3>
           <p>{result.toLocaleString() + " "}€ / mois</p>
         </div>
-      <p className={style.totalPret}> Coût totale du pret {"(hors assurance)"} : {pretTotal}€</p>
+    <p className={style.totalPret}> Coût total du prêt {"(hors assurance)"} : {pretTotal}€</p>
       </div>
       <img className={style.logo} src="/Logo/Logo.jpg"/>
     </section>
