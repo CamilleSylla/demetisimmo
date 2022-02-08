@@ -6,17 +6,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 export default function Displayer({ product, gallery, setImgUrl }) {
   const wrapper = useRef();
+  const carousel = useRef();
 
   useEffect(() => {
-    if (gallery.active) {
+    if (gallery !== false) {
       wrapper.current.style.top = 0;
+      carousel.current.style.transform = "translate3d(-50%, -50%, 0)";
     } else {
       wrapper.current.style.top = "-100%";
+      carousel.current.style.transform = "translate3d(0, -100%, 0)";
     }
-  }, [gallery.active]);
+  }, [gallery]);
   return (
     <section ref={wrapper} className={style.wrapper}>
-      <div className={style.carousel}>
+      <div ref={carousel} className={style.carousel}>
         <Carousel width="100%" dynamicHeight={false}>
           {product.acf.gallery.map((info, i) => {
             return (
@@ -29,7 +32,7 @@ export default function Displayer({ product, gallery, setImgUrl }) {
       </div>
 
       <button
-        onClick={() => setImgUrl({ ...gallery, active: false })}
+        onClick={() => setImgUrl(false)}
         className={style.close}
       >
         Fermer

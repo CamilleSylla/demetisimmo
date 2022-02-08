@@ -5,7 +5,7 @@ export default function Gallery ({product, gallery, setImgUrl}) {
     const imgClick = (event) => {
         setImgUrl({...gallery, target: event.target.currentSrc, active: true})
     }
-    // onClick={imgClick}
+
     return (
         <section className={style.wrapper}>
             <img onClick={imgClick} src={product.acf.main_img} className={style.main_img}/>

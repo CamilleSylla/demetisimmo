@@ -13,8 +13,7 @@ export default function Form () {
             mail.nom &&
             mail.email &&
             mail.objet &&
-            mail.msg &&
-            mail.rgpd === true
+            mail.msg 
         ) {
             const sendMail = await axios
           .post(window.location.origin + "/api/contact", mail)
@@ -38,9 +37,7 @@ export default function Form () {
             <input type="text" onChange={e => setMail({...mail, objet : e.target.value})} placeholder="Objet"/>
             <textarea onChange={e => setMail({...mail, msg : e.target.value})} placeholder="Message"/>
             <div>
-            <input onChange={() => setMail({...mail, rgpd : true})} type="checkbox"/>
-            <p>En cochant cette case, j'accepte que mes informations soient
-              conservées afin d'etre recontacter dans une demarche commerciale.</p>
+            <p>En cliquant sur "ENVOYER", je valide que mes données puissent être utilisées dans le but d'être recontacté à des fins commerciales par Demetis Immo.</p>
             </div>
             <button onClick={() => onSubmit()}>Envoyer</button>
         </div>

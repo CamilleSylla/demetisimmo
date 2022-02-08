@@ -50,6 +50,8 @@
         background: #1c3661;
         border-radius: 10px;
         border: 8px solid #3c67ac;
+        transition: all ease .5s;
+        cursor: pointer;
         span {
           font-size: 3rem;
           color: #F2F2F2;
@@ -58,6 +60,10 @@
           text-align: center;
           color: #F2F2F2;
           width: 80%;
+        }
+        &:hover {
+          -webkit-box-shadow: 0px 0px 15px 5px #1c3661; 
+          box-shadow: 0px 0px 15px 5px #1c3661;
         }
       }
     }

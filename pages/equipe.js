@@ -24,10 +24,8 @@ export default function Equipe({ team }) {
         pageTitle="Rencontrez notre équipe de spécialistes"
         desc="Demetis Immo met à votre disposition ses conseillers."
       />
-      <Layout>
         <Agent team={team} agent={agent} />
         <Members team={team} agent={agent} setAgent={setAgent} />
-      </Layout>
     </div>
   );
 }

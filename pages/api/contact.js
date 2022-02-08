@@ -83,7 +83,7 @@ export default async function (req, res) {
         Informations du Bien 
         ######################\n
         Type : ${req.body.type}
-        Adresse : ${req.body.num} ${req.body.rue}
+        Adresse : ${req.body.adresse}
         Ville / Commune : ${req.body.ville}, ${req.body.cp}
         `,
        }

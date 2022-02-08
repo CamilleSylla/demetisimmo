@@ -11,7 +11,6 @@ export default function Navigation () {
     const NavRef = useRef()
     const Logo = useRef()
     const router = useRouter().asPath
-    console.log(router === "/");
     
 
     useEffect(() => {
@@ -28,7 +27,7 @@ export default function Navigation () {
         .from(NavRef.current, {
             opacity: 0
         }, "nav")
-    }, [router])
+    }, [])
 
     return (
         <div className={style.container}>

@@ -32,8 +32,7 @@ export default function Description({ product }) {
       msg: {
         value: "",
         isComplete: false,
-      },
-      rgpd: false,
+      }
     };
     const onChangeForm = (key, value) => {
       formObject = { ...formObject, [key]: { value: value, isComplete: true } };
@@ -43,8 +42,7 @@ export default function Description({ product }) {
         formObject.nom.isComplete === true &&
         formObject.email.isComplete === true &&
         formObject.phone.isComplete === true &&
-        formObject.msg.isComplete === true &&
-        formObject.rgpd === true
+        formObject.msg.isComplete === true
       ) {
         const sendMail = await axios
           .post(window.location.origin + "/api/contact", formObject)
@@ -100,14 +98,7 @@ export default function Description({ product }) {
               />
             </form>
           </div>
-          <div className={style.content_wrapper}>
-            <input type="checkbox" onChange={() => (formObject.rgpd = true)} />
-            <span>
-              En cochant cette case, j'accepte que mes informations soient
-              conservées afin d'être recontacté dans une démarche commerciale.
-            </span>
-          </div>
-
+          <p style={{fontSize: "1.25vh", textAlign: "center", width: "80%", margin: "0 auto"}}>En cliquant sur "Contacter {name}", je valide que mes données puissent être utilisées dans le but d'être recontacté à des fins commerciales par Demetis Immo.</p>
           <div className={style.content_wrapper}>
             <button onClick={() => onSubmit()}>Contacter {name}</button>
           </div>

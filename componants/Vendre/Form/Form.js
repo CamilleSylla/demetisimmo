@@ -15,8 +15,7 @@ export default function Form() {
   const onFormSubmit = async e => {
     e.preventDefault()
     if (
-      form.rue &&
-      form.num &&
+      form.adresse &&
       form.ville &&
       form.cp &&
       form.type &&
@@ -57,8 +56,7 @@ export default function Form() {
             </div>
             <h3>Localisation de votre bien</h3>
             <div className={style.inputBoxes}>
-            <input type='text' placeholder="Rue + (Bis-Ter...)" onChange={e => onFormChange("rue", e.target.value)}/>
-            <input type='number' placeholder="N°" onChange={e => onFormChange("num", e.target.value)}/>
+            <input type='text' placeholder="Adresse" onChange={e => onFormChange("adresse", e.target.value)}/>
             </div>
             <div className={style.inputBoxes}>
             <input type='text' placeholder="Ville" onChange={e => onFormChange("ville", e.target.value)}/>
@@ -72,7 +70,9 @@ export default function Form() {
               <option>Terrain</option>
               <option>Autre</option>
             </select>
-            <p>En cliquant sur "VENDRE MON BIEN", je valide que mes données puissent être utilisé dans le but d'être recontacté à des fins commerciales par Demetis Immo</p>
+            <p>
+            En cliquant sur "VENDRE MON BIEN", je valide que mes données puissent être utilisées dans le but d'être recontacté à des fins commerciales par Demetis Immo.
+            </p>
             <button>Vendre mon bien</button>
         </form>
       </div>

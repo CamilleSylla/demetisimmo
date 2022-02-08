@@ -1,14 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import style from "./calculate.module.scss";
 import Link from "next/link"
+import { TeamContext } from "../../../context/TeamContext";
+import { useRouter } from "next/dist/client/router";
 
-export default function Calculate({ prix }) {
+export default function Calculate({ prix, eddyProfile }) {
   const [data, setData] = useState({
     price: prix,
     apport: 0,
     taux: 1.05,
     years: 10,
   });
+  const router = useRouter()
+  const [agent, setAgent] = useContext(TeamContext);
   let result = "Chargement..."
   let pretTotal = ""
   const monthInAYear = 12;
@@ -22,6 +26,11 @@ export default function Calculate({ prix }) {
     pretTotal = total
     result = Math.round(finalResult * 100) / 100 ;
     console.log("MONTANT PRET", Math.round(finalResult * 100) / 100);
+  }
+
+  const onEtudeClick = () => {
+    setAgent(eddyProfile)
+    router.push('/equipe')
   }
 
   Calculate();
@@ -63,7 +72,7 @@ export default function Calculate({ prix }) {
           </select>
         </div>
       </form>
-      <button onClick={() => window.open('https://nos-travaux.fr/')}>Demander une étude</button>
+      <button onClick={onEtudeClick}>Demander une étude</button>
       <div className={style.result_wrapper}>
         <div className={style.result}>
             <h3>Vos mensualités :</h3>

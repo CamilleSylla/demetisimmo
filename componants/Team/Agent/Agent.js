@@ -1,3 +1,4 @@
+import Spacing from "../../Spacing/spacing";
 import style from "./agent.module.scss";
 
 export default function Agent({ agent }) {

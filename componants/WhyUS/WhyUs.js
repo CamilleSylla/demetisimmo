@@ -36,8 +36,8 @@ export default function WhyUs({ setScrollTarget, team }) {
             permet de répondre à l’ensemble de vos besoins :
           </p>
           <ul>
-            <li onClick={onFinancementClick}><span>?</span><p>Besoin d'une étude de financement ? <br/><a style={{color: "#A67D03", fontWeight: "bold"}}>Cliquez ici</a></p></li>
-            <li style={{cursor: "pointer"}} onClick={() => window.open('https://nos-travaux.fr/')}><span>?</span><p>Besoin d’un devis de rénovation ?<br/><a style={{color: "#A67D03", fontWeight: "bold"}}>Cliquez ici</a></p></li>
+            <li onClick={onFinancementClick}><span>?</span><p>Besoin d'une étude de financement ?</p></li>
+            <li onClick={() => window.open('https://nos-travaux.fr/')}><span>?</span><p>Besoin d’un devis de rénovation ?</p></li>
           </ul>
           <p>
             Nous nous engageons à vous accompagner dans chaque étape de votre
