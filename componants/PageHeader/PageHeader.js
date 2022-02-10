@@ -1,10 +1,29 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
 export default function PageHeader () {
+
+  const router = useRouter()
+  const [title, setTitle] = useState()
+
+  useEffect(() => {
+    if (router.pathname === "/") {
+      setTitle('')
+    } else if (router.pathname === '/bien/[ref]') {
+      setTitle(` - Bien ${router.query.ref}`)   
+    } else {
+      const removeSlash = router.route.replace('/', '')
+      const finalTitle = removeSlash.charAt(0).toUpperCase() + removeSlash.slice(1)
+      console.log(router);
+      setTitle(` - ${finalTitle}`)   
+    }
+
+  },[router])
     return (
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <title>Demetis</title>
+          <title>Demetis {title}</title>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

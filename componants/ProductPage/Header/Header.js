@@ -36,13 +36,7 @@ export default function Header({ product }) {
           <p>
             {product.acf.piece} piece{product.acf.piece > 1 ? "s" : null}
           </p>
-        </div>
-        <div className={style.icon_wrapper}>
-          <img src="/icon/blue/garage.svg" />
-          <p>
-            {product.acf.garage ? product.acf.garage : 0} garage{product.acf.garage > 1 ? "s" : null}
-          </p>
-        </div>
+        </div>  
       </div>
       
     </section>

@@ -5,7 +5,6 @@ export default function Avis({avis}) {
     const last = avis[0]
 
     const CardAvis = ({avis}) => {
-      console.log(avis);
         return (
             <div className={style.card_wrapper}>
             <article className={style.card}>
