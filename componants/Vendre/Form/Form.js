@@ -71,7 +71,7 @@ export default function Form() {
               <option>Autre</option>
             </select>
             <p>
-            En cliquant sur "VENDRE MON BIEN", je valide que mes données puissent être utilisées dans le but d'être recontacté à des fins commerciales par Demetis Immo.
+            En cliquant sur "VENDRE MON BIEN", je valide que mes données puissent être utilisées dans le but d'être recontacté{"(e)"} à des fins commerciales par Demetis Immo.
             </p>
             <button>Vendre mon bien</button>
         </form>

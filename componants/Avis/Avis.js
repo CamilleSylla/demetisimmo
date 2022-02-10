@@ -11,7 +11,7 @@ export default function Avis({avis}) {
             <article className={style.card}>
                         <img src={avis.acf.photo === false ? "/icon/user.svg" : avis.acf.photo}/>
                         <div className={style.text_content}>
-                            <p>{avis.acf.text}</p>
+                            <p dangerouslySetInnerHTML={{__html: avis.acf.text}}/>
                             <div>
                                 <h3>{avis.acf.auteur}</h3>
                                 <span>{avis.acf.info}</span>
