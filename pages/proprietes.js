@@ -65,7 +65,7 @@ export async function getServerSideProps(props) {
     };
   } else {
     const houses = await axios
-      .get(`${process.env.NEXT_PUBLIC_API}/biens`)
+      .get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
       .then((res) => res.data.filter((el) => el.acf.dispo === "Vrai"));
     return {
       props: {
