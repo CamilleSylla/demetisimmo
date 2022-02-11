@@ -6,7 +6,10 @@ import Layout from '../../Layout/Layout'
 export default function Slideshow ({houses}) {
 
     const filterHouses = houses.filter(el => el.acf.dispo == "Vrai")
-
+    const enAvant = houses.filter(el => el.acf.en_avant === true)
+    .sort((a, b) => new Date(a.date) - new Date(b.date) )
+    .map(el => filterHouses.unshift(el)) 
+    
     return (
         <Layout>
             <div className={style.content}>

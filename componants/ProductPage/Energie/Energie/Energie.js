@@ -2,10 +2,6 @@ import { useEffect, useRef } from "react";
 import style from "./energie.module.scss";
 
 export default function Energie({ ges }) {
-  const house_ges = ges;
-
-  const tracker = useRef();
-  const cursor = useRef();
   const bareme = [
     {
       name: "A",
@@ -71,7 +67,10 @@ export default function Energie({ ges }) {
     <>
       <article className={style.wrapper}>
         <h1>Consommation énergétique</h1>
-        <RenderGoodPropertie value={ges} />
+        {
+          ges ? (<RenderGoodPropertie value={ges} />) : (<p>En cours de réalisation</p>)
+        }
+        
       </article>
     </>
   );

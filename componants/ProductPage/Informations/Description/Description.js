@@ -13,7 +13,7 @@ export default function Description({ product }) {
     const { img, mail, poste, name } = agent;
     let formObject = {
       form: "Bien",
-      agent: "carmelosylla@gmail.com",
+      agent: mail,
       reference: product.acf.ref,
       bien_name: product.title.rendered,
       bien_id: product.id,
@@ -53,15 +53,9 @@ export default function Description({ product }) {
             }
           });
       } else {
-        if (formObject.rgpd !== true) {
           alert(
-            "Vous devez accepter les termes en cochant la case afin de nous contacter"
+            "Vous devez remplir toute les informations du formulaire, merci."
           );
-        } else {
-          alert(
-            "Veuillez bien vouloir remplir toute les informations du formulaire, merci."
-          );
-        }
       }
     };
     const ContactForm = () => {

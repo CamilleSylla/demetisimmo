@@ -31,10 +31,9 @@
     .slideshow {
         margin-top: 5vh;
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
-        transform-style: preserve-3d;
-    perspective: 100px;
     }
     .clic {
         position: absolute;

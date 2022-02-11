@@ -2,10 +2,6 @@ import { useEffect, useRef } from "react";
 import style from "./ges.module.scss";
 
 export default function Ges({ ges }) {
-  const house_ges = ges;
-
-  const tracker = useRef()
-  const cursor = useRef()
   const bareme = [
     {
       name: "A",
@@ -69,7 +65,7 @@ export default function Ges({ ges }) {
       <>
 <article className={style.wrapper}>
     <h1>Emission de gaz</h1>
-    <RenderGoodPropertie value={ges} />
+    {ges ? (<RenderGoodPropertie value={ges} />) : (<p>En cours de réalisation</p>)}
     </article>
       </>
     

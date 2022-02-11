@@ -10,11 +10,9 @@ export default function Displayer({ product, gallery, setImgUrl }) {
 
   useEffect(() => {
     if (gallery !== false) {
-      wrapper.current.style.top = 0;
-      carousel.current.style.transform = "translate3d(-50%, -50%, 0)";
+      wrapper.current.style.left = 0;
     } else {
-      wrapper.current.style.top = "-100%";
-      carousel.current.style.transform = "translate3d(0, -100%, 0)";
+      wrapper.current.style.left = "100%";
     }
   }, [gallery]);
   return (

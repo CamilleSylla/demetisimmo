@@ -17,7 +17,7 @@
           overflow-y: hidden;
           overflow-x: scroll;
           .card_wrapper {
-              min-width: 90%;
+              min-width: 50%;
               height: 90%;
               position: relative;
               .card {
@@ -25,32 +25,29 @@
                 position: absolute;
                 top: 50%;
                 left: 5%;
-                  width: 90%;
+                  width: 80%;
                   height: 70%;
                   border-radius: 20px;
                   box-shadow: 5px 10px 20px 2px rgba(#1c3661, 0.3);
                   display: flex;
                   align-items: center;
-                  justify-content: space-between;
-                img {
-                    height: 90%;
-                    width: 35%;
-                    object-fit: contain;
-                    border-radius: 10px;
-                    margin-left: 2.5%;
-                    background: rgba(#1c3661, .3);
-                }
                 .text_content {
                     height: 90%;
-                    width: 50%;
-                    margin-right: 5%;
+                    width: 80%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    margin: 0 auto;
+                    img {
+                      filter: invert(17%) sepia(11%) saturate(6069%) hue-rotate(190deg) brightness(95%) contrast(90%);
+                    }
                     p{
                         margin-top: 5%;
                         font-size: .8rem;
                         line-height: initial;
+                        max-height: 70%;
+                        overflow-y: scroll;
+                        overflow-x: hidden;
                     }
                     h3 {
                         font-size: 1rem;
@@ -86,7 +83,6 @@
     transform: translate3d(0, -50%, 0);
     height: 70%;
     width: 30%;
-
     .circle {
       position: absolute;
       bottom: -10vh;
@@ -123,6 +119,23 @@
     .content {
       position: initial;
       transform: translate3d(0, 0, 0);
+      .slide_wrapper {
+        .card_wrapper { 
+          .card {
+            .text_content {
+              p {
+                font-size: 3rem;
+              }
+              h3 {
+                font-size: 2.5rem;
+                font-weight: 900;
+            }
+            span {
+                font-size: 2rem;
+            }
+            }}
+        }
+      }
       span {
         font-size: 3vw;
       }

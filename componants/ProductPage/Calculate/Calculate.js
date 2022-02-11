@@ -25,7 +25,6 @@ export default function Calculate({ prix, eddyProfile }) {
     const finalResult = total / total_month;
     pretTotal = total
     result = Math.round(finalResult * 100) / 100 ;
-    console.log("MONTANT PRET", Math.round(finalResult * 100) / 100);
   }
 
   const onEtudeClick = () => {
@@ -35,7 +34,6 @@ export default function Calculate({ prix, eddyProfile }) {
 
   Calculate();
   useEffect(() => {
-    console.log(data);
   }, [data.apport || data.taux || data.years || data.result]);
 
   return (

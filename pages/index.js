@@ -31,7 +31,7 @@ export async function getServerSideProps () {
   
   const avis = await axios.get(`${process.env.NEXT_PUBLIC_API}/avis`)
   .then(res => res.data)
-
+  avis.sort((a,b) => new Date(b.acf.publication) - new Date(a.acf.publication) )
   const searchSelect = await axios.get(`${process.env.NEXT_PUBLIC_API}/biens?per_page=100`)
   .then(res => res.data)
 

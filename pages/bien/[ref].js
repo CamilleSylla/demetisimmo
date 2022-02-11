@@ -9,7 +9,6 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function Product({ product, agent }) {
-  console.log(product);
   const [gallery, setGallery] = useState(false);
   const { gaz, ener, prix } = product.acf;
   const findEddy = agent.find(info => info.acf.email === "teddy.beasse@demetisimmo.fr")

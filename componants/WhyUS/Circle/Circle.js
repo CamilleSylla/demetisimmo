@@ -71,34 +71,6 @@ export default function Circle() {
         }
       }
     }
-
-      // gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: animation_start.current,
-      //     start: "top bottom",
-      //     markers: true
-      //   },
-      // })
-      // .from(animation_start.current, {
-      //   opacity: 0,
-      //   duration: 1
-      // })
-      // .from(circle.current.childNodes, {
-      //   opacity: 0,
-      //   duration: .5,
-      //   stagger: .5
-      // })
-      // .from(animation_arrow.current, {
-      //   opacity : 0,
-      //   duration: 1
-      // })
-      // .from(animation_360.current, {
-      //   scale : 0,
-      //   duration: .5
-      // }, "-=.5")
-    
-
-    
   }, [hover]);
 
   return (
@@ -125,7 +97,7 @@ export default function Circle() {
             <div data-key={i} className={style.inside} key={i}>
               <img src={`/icon/blue/${el.icon}`} />
               <h1>{el.service}</h1>
-              <p>{el.desc}</p>
+              <p style={{width: "65%", maxHeight: "20%", overflowY: "scroll", overflowX: "hidden"}}>{el.desc}</p>
               {/* <button>Contact</button> */}
             </div>
           );

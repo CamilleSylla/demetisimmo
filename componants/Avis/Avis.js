@@ -2,14 +2,29 @@ import Layout from "../Layout/Layout";
 import style from "./avis.module.scss";
 
 export default function Avis({avis}) {
-    const last = avis[0]
+
+  
 
     const CardAvis = ({avis}) => {
+      const Stars = () => {
+        const result = []
+        for (let i = 0; i < Number(avis.acf.note); i++) {
+          result.push(i)
+        }
+        return (
+          <div className={style.stars}>
+            {result.map((el, i) => {
+              return <img src="/icon/etoile.svg"/>
+            })}
+          </div>
+        )
+      }
+      console.log(avis.acf.note);
         return (
             <div className={style.card_wrapper}>
             <article className={style.card}>
-                        <img src={avis.acf.photo === false ? "/icon/user.svg" : avis.acf.photo}/>
                         <div className={style.text_content}>
+                          <Stars/>
                             <p dangerouslySetInnerHTML={{__html: avis.acf.text}}/>
                             <div>
                                 <h3>{avis.acf.auteur}</h3>
