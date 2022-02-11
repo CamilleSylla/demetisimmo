@@ -23,7 +23,7 @@ export default function Product({ product, agent }) {
       <Spacing value="5vh" />
       <Description product={product} />
       <Spacing value="5vh" />
-      <EnWrap ges={gaz} energie={ener} />
+      {product.acf.type === "Terrain" ? null : <EnWrap ges={gaz} energie={ener} />}
       <Spacing value="5vh" />
       <Calculate eddyProfile={findEddy} prix={prix} />
       <Spacing value="5vh" />
