@@ -52,7 +52,7 @@ export default async function (req, res) {
     } else if (req.body.form === "contact") {
         mailData = {
             from: 'support@demetisimmo.fr',
-            to: 'carmelosylla@gmail.com',
+            to: 'contact@demetisimmo.fr',
             subject: `Demande de contact de  ${req.body.nom} - ${req.body.objet} `,
             text: `
             ######################
@@ -70,7 +70,7 @@ export default async function (req, res) {
 
       mailData = {
         from: 'support@demetisimmo.fr',
-        to: 'carmelosylla@gmail.com',
+        to: req.body.mail,
         subject: `${req.body.type} - ${req.body.nom} ${req.body.prenom} souhaite des informations pour vendre !`,
         text: `
         ######################
