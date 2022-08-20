@@ -29,8 +29,8 @@ export default function Vendre({ houses }) {
 
 export async function getServerSideProps() {
   const houses = await axios
-    .get(`${process.env.NEXT_PUBLIC_API}/biens`)
-    .then((res) => res.data.filter((el) => el.acf.dispo != "Vrai"));
+    .get(`${process.env.NEXT_PUBLIC_API}/biens/?per_page=100`)
+    .then((res) => res.data.filter(el => el.acf.dispo !== "Vrai"));
   return {
     props: {
       houses,
