@@ -51,7 +51,6 @@ export async function getServerSideProps(props) {
       .then((res) => res.data.filter((el) => el.acf.dispo === "Vrai"))
       .then((biens) =>
         biens.filter((bien) => {
-          console.log(bien);
           return Object.keys(userFilter).every((searchKey) => {
             return bien.acf[searchKey] == userFilter[searchKey];
           });

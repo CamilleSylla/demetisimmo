@@ -36,12 +36,15 @@ export default function Cards({ data }) {
   };
 
   useEffect(() => {
-    const agent = axios
-      .get(`${process.env.NEXT_PUBLIC_API}/agent/${data.acf.vendeur[0].ID}`)
-      .then((res) => {
-        setAgent(res.data.acf.vignette);
-      });
-    setLoad(true);
+    if(data.acf.vendeur.length) {
+      const agent = axios
+        .get(`${process.env.NEXT_PUBLIC_API}/agent/${data.acf.vendeur[0].ID}`)
+        .then((res) => {
+          setAgent(res.data.acf.vignette);
+        });
+      setLoad(true);
+
+    }
   }, []);
 
   return (

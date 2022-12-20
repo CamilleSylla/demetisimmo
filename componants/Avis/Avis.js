@@ -19,7 +19,6 @@ export default function Avis({avis}) {
           </div>
         )
       }
-      console.log(avis.acf.note);
         return (
             <div className={style.card_wrapper}>
             <article className={style.card}>
