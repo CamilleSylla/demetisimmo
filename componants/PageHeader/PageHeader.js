@@ -15,7 +15,6 @@ export default function PageHeader () {
     } else {
       const removeSlash = router.route.replace('/', '')
       const finalTitle = removeSlash.charAt(0).toUpperCase() + removeSlash.slice(1)
-      console.log(router);
       setTitle(` - ${finalTitle}`)   
     }
 

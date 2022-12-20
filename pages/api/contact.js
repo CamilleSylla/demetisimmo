@@ -15,7 +15,6 @@ export default async function (req, res) {
         // verify connection configuration
         transporter.verify(function (error, success) {
             if (error) {
-                console.log(error);
                 reject(error);
             } else {
                 console.log("Server is ready to take our messages");
@@ -99,11 +98,9 @@ export default async function (req, res) {
           res.status(400).send(`${req.body.nom.value}, une erreur c'est produite, veuillez recommencer ulterieurement`)
           reject(err);
       } else {
-          console.log(info);
           resolve(info);
       }
      })
     })
       res.status(200).send(`Merci ${req.body.nom.value}, nous vous répondrons dans les plus brefs delais`)
-    console.log(req.body)
   }

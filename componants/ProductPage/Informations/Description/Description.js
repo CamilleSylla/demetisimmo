@@ -49,7 +49,6 @@ export default function Description({ product }) {
           .then((res) => {
             if (res.status === 200) {
               setMailIsSend({ status: 200, msg: res.data });
-              console.log(res.data);
             }
           });
       } else {
@@ -163,7 +162,6 @@ export default function Description({ product }) {
   };
 
   useEffect(() => {
-    console.log(window.location.origin);
     const agent = axios
       .get(`${process.env.NEXT_PUBLIC_API}/agent/${ID}`)
       .then((res) => {
