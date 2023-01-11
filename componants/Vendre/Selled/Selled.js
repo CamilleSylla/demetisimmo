@@ -14,7 +14,7 @@ export default function Selled ({houses}) {
             <div style={{display:"flex", justifyContent:"space-between", width:"100%"}}>
                 <h1>Nos derniers biens vendus</h1>
                 <Link href="/vendu">
-                <button className={btnStyle}>consulter tous nos ventes</button>
+                <button className={btnStyle}>consulter toutes nos ventes</button>
                 </Link>
 
             </div>
